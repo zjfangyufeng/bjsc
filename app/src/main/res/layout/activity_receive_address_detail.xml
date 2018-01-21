@@ -1,0 +1,270 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    android:background="#f4f4f4">
+
+    <RelativeLayout
+        android:id="@+id/maintab_activity_head_lay"
+        android:layout_width="fill_parent"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:layout_height="47.5dp" >
+
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@mipmap/public_return" />
+
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="收货地址"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/delete_btn"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    <View
+        android:background="@mipmap/public_line_middle"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></View>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:hint="收货人"
+            android:textColorHint="#c0c0c0"
+            android:gravity="center_vertical"
+            android:layout_width="80dp"
+            android:textSize="15dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/name_tv"
+            android:textColorHint="#666666"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <ImageView
+        android:paddingLeft="15dp"
+        android:background="#ffffff"
+        android:src="@mipmap/public_line_middle"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></ImageView>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:hint="手机号"
+            android:textColorHint="#c0c0c0"
+            android:gravity="center_vertical"
+            android:layout_width="80dp"
+            android:textSize="15dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/phone_tv"
+            android:textColorHint="#666666"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <ImageView
+        android:paddingLeft="15dp"
+        android:background="#ffffff"
+        android:src="@mipmap/public_line_middle"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></ImageView>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:hint="邮政编码"
+            android:textColorHint="#c0c0c0"
+            android:gravity="center_vertical"
+            android:layout_width="80dp"
+            android:textSize="15dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/postcode_tv"
+            android:textColorHint="#666666"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <ImageView
+        android:paddingLeft="15dp"
+        android:background="#ffffff"
+        android:src="@mipmap/public_line_middle"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></ImageView>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/choose_address_lay"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:hint="所在区域"
+            android:textColorHint="#c0c0c0"
+            android:gravity="center_vertical"
+            android:layout_width="80dp"
+            android:textSize="15dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/address_tv"
+            android:textColorHint="#666666"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@mipmap/public_unfold"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+    <ImageView
+        android:paddingLeft="15dp"
+        android:background="#ffffff"
+        android:src="@mipmap/public_line_middle"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></ImageView>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:hint="详细地址"
+            android:textColorHint="#c0c0c0"
+            android:gravity="center_vertical"
+            android:layout_width="80dp"
+            android:textSize="15dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/address_detail_tv"
+            android:textColorHint="#666666"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:textSize="15dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:background="@mipmap/public_line_middle"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></View>
+
+    <View
+        android:background="@mipmap/public_line_middle"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></View>
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:clickable="true"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:text="设置为默认地址"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:textSize="15dp"
+            android:textColor="#666666"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <CheckBox
+            android:id="@+id/set_default_btn"
+            android:button="@null"
+            android:background="@drawable/public_user_switch_selector"
+            android:layout_width="45dp"
+            android:layout_height="25dp" />
+
+    </LinearLayout>
+    <View
+        android:background="@mipmap/public_line_middle"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></View>
+    <Button
+        android:id="@+id/modify_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="42.5dp"
+        android:layout_marginTop="20dp"
+        android:text="修改地址"
+        android:background="#ffffff"
+        android:textColor="@color/public_orange"
+        android:textSize="17dp" />
+    <View
+        android:background="@mipmap/public_line_middle"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></View>
+</LinearLayout>

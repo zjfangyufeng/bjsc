@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/finish_novice3_btn"
+        android:text="结束教程>>"
+        android:background="@drawable/public_pop_button_black"
+        android:textSize="12dp"
+        android:textColor="#777777"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="85dp"
+        android:layout_height="25dp" />
+    <ImageView
+        android:layout_above="@+id/rippleBackground3"
+        android:background="@mipmap/guide_up_text"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+
+    <com.ddfun.customerview.RippleBackground
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_centerInParent="true"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/rippleBackground3"
+        app:rb_radius="10dp"
+        app:rb_rippleAmount="4"
+        app:rb_duration="3000"
+        app:rb_scale="4">
+        <ImageView
+            android:layout_above="@+id/iv"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/up_arrow_view"
+            android:src="@drawable/up_arrow"
+            android:layout_width="19dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="59dp"></ImageView>
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/guide_pub_circle_01_black"/>
+    </com.ddfun.customerview.RippleBackground>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/step3_centerImage"
+        android:src="@mipmap/guide_pub_circle_01"/>
+    <View
+        android:id="@+id/guide_pub_hand3"
+        android:alpha="0"
+        android:background="@mipmap/guide_pub_hand"
+        android:layout_width="57dp"
+        android:layout_height="48dp" />
+</RelativeLayout>

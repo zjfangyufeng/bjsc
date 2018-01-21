@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="310dp"
+    android:background="@null"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@null"
+        android:gravity="right"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/exit"
+            android:clickable="true"
+            android:src="@mipmap/public_pop_account_close_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/public_pop_card_bg_w"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/public_orange"
+            android:text="待入账小贴士"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <View
+            android:background="@mipmap/public_line_side"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="好友做完1个答题任务或APP体验任务后,邀请奖励进入待入账.等待24小时后,邀请奖励发放,进入已入账.例如："
+            android:textSize="12dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:background="@drawable/public_pop_invite_credited_bg"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_width="240dp"
+            android:layout_height="45dp">
+            <TextView
+                android:text="2017-08-17 21:46"
+                android:textSize="12dp"
+                android:textColor="@color/public_red_orange"
+                android:gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="好友完成任务"
+                android:textSize="12dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/public_pop_invite_credited_bg"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_width="240dp"
+            android:layout_height="45dp">
+            <TextView
+                android:text="2017-08-18 21:46"
+                android:textSize="12dp"
+                android:textColor="@color/public_red_orange"
+                android:gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="邀请奖励发放"
+                android:textSize="12dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="@drawable/investment_tips_dialog_bottom_bg"
+        android:layout_width="match_parent"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/public_invest_remind_ico_iv"
+            android:src="@mipmap/public_invest_remind_ico"
+            android:layout_alignTop="@+id/tv_bottom"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_toRightOf="@+id/public_invest_remind_ico_iv"
+            android:textColor="@color/public_orange"
+            android:textSize="12dp"
+            android:lineSpacingExtra="4dp"
+            android:text="待入账奖励不计入总收入与今日收入内。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/public_orange"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f2f2"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:id="@+id/maintab_activity_head_lay"
+            android:layout_width="fill_parent"
+            android:background="@color/public_orange"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/maintab_activity_head_left_btn"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@mipmap/public_return" />
+            <TextView
+                android:id="@+id/maintab_activity_head_middle"
+                android:layout_width="match_parent"
+                android:layout_height="47.5dp"
+                android:gravity="center"
+                android:text="答题任务"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:textSize="17dp" />
+            <LinearLayout
+                android:id="@+id/btn_head_layout_right"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="47.5dp">
+                <ImageView
+                    android:src="@mipmap/answer_top_icon"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+                <TextView
+                    android:text="流程图解"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout
+            android:background="@color/public_orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/tab_activity_radiogroup"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:background="@drawable/public_answer_title_normal"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+                <RadioButton
+                    android:id="@+id/tab_activity_radiogbutton1"
+                    android:checked="true"
+                    style="@style/task_manage_activity_tab_radio_button_style" />
+                <RadioButton
+                    android:id="@+id/tab_activity_radiogbutton2"
+                    style="@style/task_manage_activity_tab_radio_button_style" />
+                <RadioButton
+                    android:id="@+id/tab_activity_radiogbutton3"
+                    style="@style/task_manage_activity_tab_radio_button_style" />
+                <RadioButton
+                    android:id="@+id/tab_activity_radiogbutton4"
+                    style="@style/task_manage_activity_tab_radio_button_style" />
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"></View>
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+                    <View
+                        android:id="@+id/view_red_dot"
+                        android:visibility="invisible"
+                        android:background="@mipmap/public_remind_round_12"
+                        android:layout_marginRight="9dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"></View>
+                </RelativeLayout>
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"></View>
+            </LinearLayout>
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/view"
+                android:background="@drawable/answer_arc_bg"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"></View>
+            <com.ddfun.customerview.CannotScrollVP
+                android:id="@+id/tab_activity_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </com.ddfun.customerview.CannotScrollVP>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.ddfun.customerview.PartTransparentLayout
+        android:id="@+id/layout_part_transparent"
+        android:visibility="gone"
+        android:background="#00000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.ddfun.customerview.PartTransparentLayout>
+    <RelativeLayout
+        android:id="@+id/layout_animation"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:background="@mipmap/guide_answer_4_bg_w"
+            android:layout_centerInParent="true"
+            android:layout_width="250dp"
+            android:layout_height="100dp"></View>
+        <com.ddfun.customerview.LockScreenSlideView
+            android:id="@+id/novice_step2_lockScreenSlideView"
+            android:background="@mipmap/guide_answer_4_ico"
+            android:layout_centerInParent="true"
+            android:layout_width="67.5dp"
+            android:layout_height="67.5dp">
+        </com.ddfun.customerview.LockScreenSlideView>
+        <ImageView
+            android:id="@+id/left_arrow_view"
+            android:layout_toLeftOf="@+id/novice_step2_lockScreenSlideView"
+            android:layout_centerVertical="true"
+            android:src="@drawable/left_arrow"
+            android:layout_width="59dp"
+            android:layout_marginRight="29dp"
+            android:layout_height="19dp"></ImageView>
+        <ImageView
+            android:layout_toRightOf="@+id/novice_step2_lockScreenSlideView"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow"
+            android:layout_width="59dp"
+            android:layout_marginLeft="29dp"
+            android:layout_height="19dp"></ImageView>
+        <View
+            android:id="@+id/guide_pub_hand2"
+            android:alpha="0"
+            android:background="@mipmap/guide_pub_hand"
+            android:layout_width="57dp"
+            android:layout_height="48dp" />
+    </RelativeLayout>
+</RelativeLayout>

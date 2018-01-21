@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content">
+        <View
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"></View>
+        <TextView
+            android:id="@+id/tv_day_position"
+            android:text="第1天"
+            android:textSize="14dp"
+            android:textColor="@color/public_orange"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_status"
+            android:text="可进行"
+            android:textSize="12dp"
+            android:textColor="@color/public_orange"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:id="@+id/divider_bottom"
+            android:background="@color/public_orange"
+            android:layout_width="65dp"
+            android:layout_height="2px"></View>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/view_need_reupload"
+        android:text="需重新上传截图"
+        android:visibility="visible"
+        android:textSize="10dp"
+        android:textColor="#2bc6b6"
+        android:paddingTop="3dp"
+        android:gravity="center_horizontal"
+        android:background="@mipmap/game_box_again"
+        android:layout_marginTop="3dp"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+</FrameLayout>

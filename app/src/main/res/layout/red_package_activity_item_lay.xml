@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@mipmap/daily_reward_list_icon"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="29dp"
+        android:layout_height="29dp" />
+    <TextView
+        android:id="@+id/tv_name"
+        android:text="dadadan"
+        android:textSize="12dp"
+        android:textColor="#555555"
+        android:layout_marginLeft="9dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_reward"
+        android:text="dadadan"
+        android:textSize="13dp"
+        android:textColor="#333333"
+        android:layout_marginLeft="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

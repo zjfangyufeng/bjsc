@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/public_pop_bg"
+        android:orientation="vertical"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/msg_tv"
+            android:gravity="center"
+            android:text="本券码/礼包码只能在通过豆豆趣玩下载安装的应用上使用，请先安装应用~"
+            android:textSize="16dp"
+            android:lineSpacingMultiplier="1.4"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="#666666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:text="暂不下载"
+                android:background="@drawable/public_button_gray"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/confirm_btn"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:text="直接下载"
+                android:background="@drawable/public_button_orange"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

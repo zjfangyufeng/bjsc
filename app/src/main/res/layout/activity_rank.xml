@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/public_orange"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:id="@+id/maintab_activity_head_lay"
+            android:layout_width="fill_parent"
+            android:background="@color/public_orange"
+            android:layout_height="wrap_content" >
+            <ImageView
+                android:id="@+id/maintab_activity_head_left_btn"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="3dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@mipmap/public_return" />
+            <TextView
+                android:id="@+id/maintab_activity_head_middle"
+                android:layout_width="match_parent"
+                android:layout_height="47.5dp"
+                android:gravity="center"
+                android:text="排行榜"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:textSize="17dp" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/success_lay"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioGroup
+                    android:id="@+id/tab_activity_radiogroup"
+                    android:layout_width="250dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/public_answer_title_normal"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal" >
+                    <RadioButton
+                        android:id="@+id/tab_activity_radiogbutton1"
+                        android:checked="true"
+                        style="@style/task_manage_activity_tab_radio_button_style" />
+                    <RadioButton
+                        android:id="@+id/tab_activity_radiogbutton2"
+                        style="@style/task_manage_activity_tab_radio_button_style" />
+                    <RadioButton
+                        android:id="@+id/tab_activity_radiogbutton3"
+                        style="@style/task_manage_activity_tab_radio_button_style" />
+                    <RadioButton
+                        android:id="@+id/tab_activity_radiogbutton4"
+                        style="@style/task_manage_activity_tab_radio_button_style" />
+                </RadioGroup>
+            </FrameLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <com.ddfun.customerview.CannotScrollVP
+                    android:id="@+id/tab_activity_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </com.ddfun.customerview.CannotScrollVP>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/loading_progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true" />
+    <include layout="@layout/net_error_layout" />
+</RelativeLayout>

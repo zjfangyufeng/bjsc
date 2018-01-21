@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/maintab_activity_head_lay"
+        android:layout_width="fill_parent"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_height="47.5dp" >
+
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@mipmap/public_close_m" />
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="我的二维码"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/maintab_activity_head_lay"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@mipmap/user_mine_code_bg_left"
+            android:layout_marginTop="155dp"
+            android:layout_width="50dp"
+            android:layout_height="220dp" />
+        <LinearLayout
+            android:layout_marginTop="47dp"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/user_personal_card_top"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="96dp">
+                <TextView
+                    android:textColor="#555555"
+                    android:textSize="13dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="安卓好友记得填写我的邀请码"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/invite_code_tv"
+                    android:textSize="28dp"
+                    android:text="1231231"
+                    android:textColor="@color/public_orange"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/invite_card_radian" />
+            <LinearLayout
+                android:background="@drawable/bg_white_bottom_round"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="25dp"
+                    android:id="@+id/user_personal_qrcode_iv"
+                    android:scaleType="fitXY"
+                    android:layout_width="175dp"
+                    android:layout_height="175dp" />
+                <LinearLayout
+                    android:background="@drawable/user_personal_card_bottom"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textSize="13dp"
+                        android:text="扫一扫，一起加入豆豆趣玩"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/public_orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textSize="13dp"
+                        android:text="请截屏保存图片或长按二维码保存"
+                        android:layout_marginBottom="15dp"
+                        android:textColor="@color/public_orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:src="@mipmap/user_mine_code_bg_right"
+            android:layout_marginTop="155dp"
+            android:layout_width="50dp"
+            android:layout_height="220dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#666666"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@drawable/public_button_white"
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="215dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/public_pop_submit_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18dp"
+                android:textColor="#2bc6b6"
+                android:layout_marginTop="13dp"
+                android:text="提交成功！"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="13dp"
+                android:textColor="#888888"
+                android:layout_marginTop="17dp"
+                android:text="您的申诉将在2~5个工作日审核完成"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <TextView
+            android:id="@+id/confirm_btn"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="知道了"
+            android:textColor="@color/public_orange"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+</LinearLayout>

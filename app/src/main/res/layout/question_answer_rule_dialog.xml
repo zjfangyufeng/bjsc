@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/exit"
+            android:clickable="true"
+            android:layout_width="44dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/pop_account_close"/>
+
+        <LinearLayout
+            android:background="@drawable/public_pop_bg"
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:background="@drawable/public_pop_rule_top_yellow_bg"
+                android:layout_width="match_parent"
+                android:layout_height="65dp">
+
+                <View
+                    android:layout_marginTop="8.5dp"
+                    android:layout_below="@+id/app_name_tv"
+                    android:layout_toLeftOf="@+id/total_reward_tv"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="4dp"
+                    android:background="@mipmap/draw_pop_rule_top_xian_bg_left">
+                </View>
+
+                <TextView
+                    android:id="@+id/app_name_tv"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="18dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="#f9a61a"
+                    android:text="百度新闻"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="8.5dp"
+                    android:layout_below="@+id/app_name_tv"
+                    android:layout_toRightOf="@+id/total_reward_tv"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="40dp"
+                    android:layout_height="4dp"
+                    android:background="@mipmap/draw_pop_rule_top_xian_bg_right">
+                </View>
+
+                <TextView
+                    android:id="@+id/total_reward_tv"
+                    android:layout_marginTop="2dp"
+                    android:layout_below="@+id/app_name_tv"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="13dp"
+                    android:textColor="#fc6e51"
+                    android:text="0.6~2元"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/draw_pop_rule_top_bg">
+                </View>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="22dp"
+                android:layout_width="300dp"
+                android:layout_height="194dp">
+
+                <View
+                    android:background="@mipmap/draw_pop_rule_con_left"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="45dp"
+                    android:id="@+id/time_axis"
+                    android:layout_width="32.5dp"
+                    android:layout_height="194dp" />
+
+                <LinearLayout
+                    android:layout_marginTop="-2dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_toRightOf="@id/time_axis"
+                    android:gravity="center_vertical"
+                    android:id="@+id/stage1_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp">
+
+                    <TextView
+                        android:id="@+id/stage1_title"
+                        android:text="第1天答题"
+                        android:textSize="13dp"
+                        android:textColor="#f9a61a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/stage1_reward_tv"
+                        android:text="奖励0.1~1元"
+                        android:textSize="11dp"
+                        android:textColor="#999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_below="@+id/stage1_lay"
+                    android:gravity="center_vertical"
+                    android:layout_toRightOf="@id/time_axis"
+                    android:id="@+id/stage2_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp">
+
+                    <TextView
+                        android:text="第2天答题"
+                        android:id="@+id/stage2_title"
+                        android:textSize="13dp"
+                        android:textColor="#f9a61a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/stage2_reward_tv"
+                        android:text="奖励0.1~1元"
+                        android:textSize="11dp"
+                        android:textColor="#999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="45dp"
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/stage2_lay"
+                    android:layout_toRightOf="@id/time_axis"
+                    android:id="@+id/stage3_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp">
+
+                    <TextView
+                        android:text="第3到6天试玩3分钟"
+                        android:textSize="13dp"
+                        android:id="@+id/stage3_title"
+                        android:textColor="#f9a61a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/stage3_reward_tv"
+                        android:text="每次奖励0.05元"
+                        android:textSize="11dp"
+                        android:textColor="#999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="45dp"
+                    android:gravity="center_vertical"
+                    android:layout_below="@+id/stage3_lay"
+                    android:layout_toRightOf="@id/time_axis"
+                    android:id="@+id/stage4_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp">
+
+                    <TextView
+                        android:text="第7天试玩3分钟"
+                        android:textSize="13dp"
+                        android:id="@+id/stage4_title"
+                        android:textColor="#f9a61a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/stage4_reward_tv"
+                        android:text="奖励0.2元"
+                        android:textSize="11dp"
+                        android:textColor="#999999"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:background="@mipmap/draw_answer_finish_axis_xian"
+                android:layout_marginTop="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="1px">
+
+            </View>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:background="@mipmap/draw_pop_rule_careful_icon"
+                    android:layout_marginLeft="18dp"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp">
+                </View>
+
+                <TextView
+                    android:id="@+id/warn_tv"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="-3dp"
+                    android:lineSpacingExtra="4dp"
+                    android:textSize="12dp"
+                    android:textColor="#fc6e51"
+                    android:text="未完成以上答题步骤，卸载百度新闻将无法继续获得奖励。"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

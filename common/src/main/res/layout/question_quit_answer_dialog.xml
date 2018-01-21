@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/public_pop_bg"
+        android:orientation="vertical"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/msg_tv"
+            android:text="确认离开该答题？"
+            android:layout_marginTop="43dp"
+            android:textSize="18dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="#454545"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+
+        </View>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp">
+            <TextView
+                android:id="@+id/confirm_btn"
+                android:textColor="#c0c0c0"
+                android:textSize="17dp"
+                android:text="确认"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <View
+                android:background="@mipmap/public_line_middle"
+                android:layout_width="1px"
+                android:layout_height="match_parent"></View>
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:textColor="@color/public_orange"
+                android:textSize="17dp"
+                android:text="继续答题"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

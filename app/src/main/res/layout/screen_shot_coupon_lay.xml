@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screenshot_coupon_lay"
+    android:clickable="true"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="20dp"
+    android:layout_height="80dp">
+    <LinearLayout
+        android:background="@drawable/public_guidecard_bg_left"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="115dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="￥"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_reward"
+                android:text="0.00"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="元"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:text="现金奖励"
+            android:textColor="#018779"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:background="@mipmap/public_guidecard_bg_con"
+        android:layout_width="22px"
+        android:layout_height="match_parent"></View>
+    <LinearLayout
+        android:background="@drawable/public_guidecard_bg_right"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_screen_shot_coupon_main_hint"
+                android:text="恭喜您获得该APP截图任务"
+                android:textColor="#ffe57d"
+                android:textSize="13dp"
+                android:layout_marginBottom="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_screen_shot_coupon_sub_hint"
+                    android:text="上传截图,获取奖励"
+                    android:layout_centerInParent="true"
+                    android:textColor="#f2f2f2"
+                    android:layout_marginRight="8dp"
+                    android:textSize="13dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/public_guidecard_go_icon"
+                    android:layout_width="45dp"
+                    android:layout_height="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

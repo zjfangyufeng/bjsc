@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tag1" type="id"></item>
+    <item name="tag2" type="id"></item>
+    <item name="tag_question_task_guide" type="id"></item>
+    <item name="btn_wx_exchange" type="id" />
+    <item name="download_btn" type="id" />
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/public_pop_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/ff"
+            android:textSize="14dp"
+            android:text="真实姓名与微信绑定银行卡姓名不符,请查实后再次验证,如若没有绑定银行卡,请前往微信钱包绑定银行卡。"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#888888"
+            android:lineSpacingExtra="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <TextView
+            android:id="@+id/btn_confirm"
+            android:text="我知道了"
+            android:textSize="15dp"
+            android:textColor="@color/public_orange"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>

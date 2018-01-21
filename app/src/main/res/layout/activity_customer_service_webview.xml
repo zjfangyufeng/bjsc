@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/head_lay"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_height="47.5dp" >
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            android:src="@mipmap/public_return" />
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="客服中心"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+        <LinearLayout
+            android:id="@+id/btn_feed_back"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <View
+                android:background="@mipmap/service_top_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"></View>
+            <TextView
+                android:text="意见反馈"
+                android:textSize="12dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/pure_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:progressDrawable="@drawable/probar_download_style"
+        android:max="100"
+        android:progress="0"
+        android:layout_height="3px" />
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

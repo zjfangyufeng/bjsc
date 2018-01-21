@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="310dp"
+    android:background="@null"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@null"
+        android:gravity="right"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/exit"
+            android:clickable="true"
+            android:src="@mipmap/public_pop_account_close_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/public_pop_bg"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/public_orange"
+            android:text="卡牌规则"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <View
+            android:background="@mipmap/public_line_side"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="1,点击一张卡牌,翻开卡牌,展示任务要求及可领红包金额;"
+                android:textSize="12dp"
+                android:textColor="#666666"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="2,达到卡牌要求即可在此页面领取卡牌红包(卡牌红包为截图任务奖励的额外收入);"
+                android:textSize="12dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#666666"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="3,卡牌的截图任务个数要求以审核成功为有效标准;"
+                android:textSize="12dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#666666"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="4,请按截图要求认真完成,禁止一切刷任务行为,一经发现,将以封号处理;"
+                android:textSize="12dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#666666"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_entry_item_lay"
+    android:layout_width="0dp"
+    android:background="#f4f4f4"
+    android:layout_weight="1"
+    android:gravity="center_vertical"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:layout_height="65dp">
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_margin="5dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"></ImageView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/name_tv"
+            android:text="娱乐抽奖"
+            android:textSize="14dp"
+            android:textColor="#383838"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:text="奖励翻翻翻"
+            android:textSize="12dp"
+            android:textColor="#ababab"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

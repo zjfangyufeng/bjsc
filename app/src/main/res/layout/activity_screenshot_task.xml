@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/maintab_activity_head_lay"
+        android:layout_width="fill_parent"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:layout_height="47.5dp" >
+
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@mipmap/public_return" />
+
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="截图任务"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="18dp" />
+        <LinearLayout
+            android:id="@+id/btn_head_layout_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="47.5dp">
+            <ImageView
+                android:src="@mipmap/answer_top_icon"
+                android:layout_marginRight="5dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <TextView
+                android:text="截图规则"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/tab_activity_radiogroup"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tab_activity_radiogbutton1"
+            style="@style/tab_activity_radiogbutton_style" />
+
+        <RadioButton
+            android:id="@+id/tab_activity_radiogbutton2"
+            style="@style/tab_activity_radiogbutton_style" />
+
+        <RadioButton
+            android:id="@+id/tab_activity_radiogbutton3"
+            style="@style/tab_activity_radiogbutton_style" />
+
+        <RadioButton
+            android:id="@+id/tab_activity_radiogbutton4"
+            style="@style/tab_activity_radiogbutton_style" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_activity_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

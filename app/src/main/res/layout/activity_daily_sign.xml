@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f4f4f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/maintab_activity_head_lay"
+        android:layout_width="fill_parent"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:layout_height="47.5dp" >
+
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@mipmap/public_return" />
+
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:text="每日打卡"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="18dp" />
+        <LinearLayout
+            android:id="@+id/btn_head_layout_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="47.5dp">
+            <ImageView
+                android:src="@mipmap/answer_top_icon"
+                android:layout_marginRight="5dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <TextView
+                android:text="打卡规则"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/loading_progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true" />
+    <include layout="@layout/net_error_layout" />
+    <ScrollView
+        android:id="@+id/success_lay"
+        android:background="#faa71b"
+        android:layout_below="@+id/maintab_activity_head_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@mipmap/daily_punch__box_bg"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:background="@drawable/daily_punch_con_bg"
+                    android:layout_marginTop="123dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:id="@+id/view_signed_day"
+                        android:background="@mipmap/daily_punch_day0"
+                        android:layout_marginTop="40dp"
+                        android:layout_width="270dp"
+                        android:layout_height="65dp"></View>
+                    <Button
+                        android:id="@+id/btn_sign_today"
+                        android:text="今日打卡"
+                        android:textSize="15dp"
+                        android:textColor="#fe5725"
+                        android:background="@drawable/daily_punch_yellowbut"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginRight="23dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_width="270dp"
+                        android:layout_height="54dp" />
+                    <Button
+                        android:id="@+id/btn_open_red_package"
+                        android:text="拆红包"
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/daily_punch_graybut"
+                        android:layout_marginLeft="23dp"
+                        android:layout_marginRight="23dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_width="270dp"
+                        android:layout_height="54dp" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="25dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_sign_details"
+                            android:text="已打卡0天"
+                            android:textSize="13dp"
+                            android:textColor="#666666"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:background="@mipmap/daily_punch_icon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="90dp"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"></View>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@mipmap/daily_punch_rules_title"
+                    android:layout_centerInParent="true"
+                    android:layout_width="333dp"
+                    android:layout_height="9dp"></View>
+                <TextView
+                    android:text="更多奖励"
+                    android:layout_centerInParent="true"
+                    android:textSize="15dp"
+                    android:textColor="#8c5800"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_short_cut1"
+                    android:onClick="onClick"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="165dp"
+                    android:layout_height="100dp" />
+                <ImageView
+                    android:id="@+id/iv_short_cut2"
+                    android:onClick="onClick"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="165dp"
+                    android:layout_height="100dp" />
+            </LinearLayout>
+            <TextView
+                android:text="※本活动最终解释权归豆豆趣玩所有※"
+                android:background="#e89303"
+                android:textSize="11dp"
+                android:textColor="#feca74"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+

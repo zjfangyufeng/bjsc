@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_amount"
+                    android:text="10元"
+                    android:textSize="15dp"
+                    android:layout_marginRight="3dp"
+                    android:textColor="@color/public_red_orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:text="微信钱包"
+                    android:textSize="15dp"
+                    android:textColor="#555555"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_time"
+                android:text="2015.05.07 14:15:25"
+                android:textSize="11dp"
+                android:textColor="#999999"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_status"
+            android:text="已到帐"
+            android:textSize="12dp"
+            android:textColor="#999999"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_failed_reason"
+        android:text="失败原因:人丑钱少,要不得,你再多赚点!"
+        android:textSize="12dp"
+        android:textColor="@color/public_orange"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

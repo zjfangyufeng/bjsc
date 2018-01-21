@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/public_user_redcash_info_bg"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_item"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_symbol1"
+                android:text="￥"
+                android:textSize="12dp"
+                android:textColor="@color/public_red_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_amount1"
+                android:text="0."
+                android:textSize="30dp"
+                android:textColor="@color/public_red_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_amount2"
+                android:text="0"
+                android:textSize="20dp"
+                android:textColor="@color/public_red_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_user_redcash_info_line"
+            android:layout_width="1px"
+            android:layout_height="match_parent"></View>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="提现红包券"
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_desc"
+                android:text="• 提现可直接抵用"
+                android:textSize="11dp"
+                android:layout_marginTop="7dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="#ababab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:id="@+id/view_check_symbol"
+            android:background="@drawable/select_coupon_selector"
+            android:layout_marginRight="15dp"
+            android:layout_width="18dp"
+            android:layout_height="20dp"></View>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_unavailable_hint"
+        android:text="不可用原因:红包加余额不足所选提现金额。"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:textSize="12dp"
+        android:textColor="#ababab"
+        android:background="@drawable/withdraw_redcash_info_gray"
+        android:layout_width="match_parent"
+        android:layout_height="35dp" />
+</LinearLayout>

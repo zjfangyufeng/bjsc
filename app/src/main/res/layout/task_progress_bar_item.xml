@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/iv_cursor"
+        android:background="@mipmap/answer_sign_rate_current"
+        android:layout_width="15dp"
+        android:layout_height="19dp"></View>
+    <View
+        android:id="@+id/iv_spot"
+        android:background="@mipmap/answer_sign_rate_spot"
+        android:layout_marginTop="1dp"
+        android:layout_width="3dp"
+        android:layout_height="3dp"></View>
+    <TextView
+        android:id="@+id/ff"
+        android:text="第1天"
+        android:textColor="#999999"
+        android:textSize="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

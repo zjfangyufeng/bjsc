@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="235dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_halo"
+            android:visibility="invisible"
+            android:src="@mipmap/daily_punch_pop_bg_light"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_top"
+            android:visibility="invisible"
+            android:src="@mipmap/daily_punch_pop_bg_top"
+            android:layout_centerHorizontal="true"
+            android:layout_width="227dp"
+            android:layout_height="83dp" />
+        <ImageView
+            android:id="@+id/iv_red_package"
+            android:src="@mipmap/daily_punch_pop_hongbao"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv_top"
+            android:layout_width="228dp"
+            android:layout_height="300dp" />
+        <TextView
+            android:id="@+id/tv"
+            android:alpha="0"
+            android:text="豆豆趣玩送您1个\n随机金额红包"
+            android:gravity="center"
+            android:textColor="#ffeb51"
+            android:textSize="20dp"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginTop="225dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_open"
+            android:visibility="invisible"
+            android:text="立即拆红包"
+            android:textSize="18dp"
+            android:textColor="#fb4b10"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="305dp"
+            android:background="@drawable/daily_punch_yellow_but"
+            android:layout_width="185dp"
+            android:layout_height="45dp" />
+    </RelativeLayout>
+</LinearLayout>

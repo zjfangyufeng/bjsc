@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv1"
+            android:src="@mipmap/screen_info_task_locking"
+            android:layout_marginRight="12dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_toRightOf="@+id/iv1"
+            android:text="任务奖励+"
+            android:gravity="center"
+            android:textColor="@color/public_red_orange"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/rewards_tv"
+            android:layout_toRightOf="@+id/tv1"
+            android:text="1.00"
+            android:gravity="center"
+            android:textColor="@color/public_red_orange"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/rewards_tv"
+            android:text="元"
+            android:gravity="center"
+            android:textColor="@color/public_red_orange"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_task_request"
+            android:layout_below="@+id/rewards_tv"
+            android:textSize="13dp"
+            android:textColor="#ababab"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="5dp"
+            android:layout_toRightOf="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@mipmap/public_line_middle"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></View>
+</RelativeLayout>

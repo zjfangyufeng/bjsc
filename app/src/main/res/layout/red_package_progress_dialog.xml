@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="310dp"
+    android:background="@null"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@null"
+        android:gravity="right"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/exit"
+            android:clickable="true"
+            android:src="@mipmap/public_pop_account_close_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/public_pop_card_bg_w"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/pop_answer_redbox_unmet_top_icon"
+            android:layout_marginTop="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:textColor="@color/public_red_orange"
+            android:text="当前红包待拆"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_sub_title"
+            android:textColor="#888888"
+            android:text="再完成1个答题任务即可拆中级红包,\n红包越拆越大,可拆红包当天有效,快去做任务吧!"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="@drawable/investment_tips_dialog_bottom_bg"
+        android:layout_width="match_parent"
+        android:paddingTop="15dp"
+        android:paddingBottom="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_symbol1"
+            android:textColor="@color/public_orange"
+            android:text="目前完成任务进度"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.ddfun.customerview.RedPackageProgressBarView
+            android:id="@+id/red_package_progress_bar"
+            android:layout_below="@+id/tv_symbol1"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </com.ddfun.customerview.RedPackageProgressBarView>
+    </RelativeLayout>
+</LinearLayout>

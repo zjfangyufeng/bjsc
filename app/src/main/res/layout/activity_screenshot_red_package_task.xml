@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f4f4f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/maintab_activity_head_lay"
+        android:layout_width="fill_parent"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:layout_height="47.5dp" >
+
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@mipmap/public_return" />
+
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:text="任务卡牌"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="18dp" />
+        <LinearLayout
+            android:id="@+id/btn_head_layout_right"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="47.5dp">
+            <ImageView
+                android:layout_marginRight="5dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <TextView
+                android:text="翻牌记录"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/loading_progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true" />
+    <include layout="@layout/net_error_layout" />
+    <ScrollView
+        android:id="@+id/success_lay"
+        android:background="#ffcd2d"
+        android:scrollbars="none"
+        android:layout_below="@+id/maintab_activity_head_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/symbol_top_img"
+                    android:src="@mipmap/screen_card_info_top"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv"
+                    android:padding="4dp"
+                    android:layout_below="@id/symbol_top_img"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/screen_card_info_people_cibg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+                <TextView
+                    android:id="@+id/btn_rule"
+                    android:text="卡牌规则"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/screen_card_info_rule_bg"
+                    android:textSize="12dp"
+                    android:layout_marginTop="13dp"
+                    android:textColor="@color/pure_white"
+                    android:gravity="center"
+                    android:layout_width="70dp"
+                    android:layout_height="23dp"></TextView>
+                <View
+                    android:background="@mipmap/screen_card_info_people"
+                    android:layout_alignTop="@+id/rv"
+                    android:layout_alignRight="@+id/rv"
+                    android:layout_marginTop="-34dp"
+                    android:layout_marginRight="-12dp"
+                    android:layout_width="30dp"
+                    android:layout_height="63dp"></View>
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_goto_screenshot_task"
+                android:onClick="onClick"
+                android:text="去完成截图任务"
+                android:textColor="@color/pure_white"
+                android:textSize="16dp"
+                android:background="@drawable/activity_screenshot_red_package_task_btn_bg"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="280dp"
+                android:layout_height="45dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+

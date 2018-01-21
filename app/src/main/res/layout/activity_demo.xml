@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.ddfun.customerview.CircularImage
+        android:id="@+id/iv_wx"
+        android:onClick="onClick"
+        android:src="@mipmap/user_more_avatar_default"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <com.ddfun.customerview.CircularImage
+        android:id="@+id/iv_wx2"
+        android:onClick="onClick"
+        android:src="@mipmap/user_more_avatar_default"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <Button
+        android:id="@+id/btn"
+        android:text="button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_base_url"
+        android:onClick="onClick"
+        android:text="切换base url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_zf_url"
+        android:text="切换zf url"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/ff"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="@color/public_orange"
+        android:text="adfasdfdfadfadfasddfadsadfadfadfasdfadfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfsadfadfadadsf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

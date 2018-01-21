@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f4f4f4"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ddfun.activity.AccountAppealActivity">
+
+    <RelativeLayout
+        android:id="@+id/maintab_activity_head_lay"
+        android:layout_width="fill_parent"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:layout_height="47.5dp" >
+
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@mipmap/public_return" />
+
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="账号异常申诉"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/submit_successfully_layout" />
+
+    <View
+        android:background="@mipmap/public_line_middle"
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></View>
+
+    <View
+        android:background="@mipmap/public_line_middle"
+        android:layout_marginTop="@dimen/activity_view_line_space"
+        android:id="@+id/line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></View>
+
+    <LinearLayout
+        android:id="@+id/appeal_lay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/appeal_content"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:lineSpacingMultiplier="1.4"
+            android:padding="15dp"
+            android:enabled="true"
+            android:gravity="top"
+            android:minLines="6"
+            android:maxLines="20"
+            android:textSize="15dp"
+            android:textColorHint="#999999"
+            android:background="#ffffff"
+            android:hint="亲爱的豆豆趣玩用户，建议您尽量详细的描述您的机型，最近在豆豆趣玩的操作等情况，以便我们更快速的解决您的问题。(字数不小于10)"
+            android:scrollbars="vertical">
+        </EditText>
+
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_marginTop="@dimen/activity_view_line_space"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+
+        <LinearLayout
+            android:id="@+id/email"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:background="#ffffff"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:text="您的联系邮箱："
+                android:textColor="#999999"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/email_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:hint="(*申诉结果将发至此邮箱)"
+                android:textColorHint="@color/public_orange"
+                android:singleLine="true"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+
+        <Button
+            android:id="@+id/btn_comp"
+            android:text="提交申诉"
+            android:textSize="16dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/public_button_orange"
+            android:textColor="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="42.5dp" />
+
+    </LinearLayout>
+</LinearLayout>

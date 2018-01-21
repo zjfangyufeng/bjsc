@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/check_task_btn"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.ddfun.customerview.RoundCornerImageView
+            android:id="@+id/icon_iv"
+            android:scaleType="fitXY"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name_tv"
+                android:textColor="#383838"
+                android:layout_toLeftOf="@+id/newprice_tv"
+                android:layout_marginBottom="3dp"
+                android:maxLines="1"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_below="@+id/name_tv"
+                android:textColor="#ababab"
+                android:text="￥"
+                android:gravity="center_vertical"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/operation_request_short_tv"
+                android:layout_below="@+id/title_tv"
+                android:textColor="#ababab"
+                android:visibility="gone"
+                android:text="审核中"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/task_remain_tv"
+                android:layout_below="@+id/title_tv"
+                android:layout_toRightOf="@+id/operation_request_short_tv"
+                android:text="剩余255fen"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/no_remain_iv"
+            android:src="@mipmap/screen_list_loot"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/btn_lay"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/btn"
+                android:text="1.00元"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_width="77dp"
+                android:layout_height="25dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

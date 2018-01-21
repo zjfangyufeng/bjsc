@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/pure_white"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <ImageView
+                android:id="@+id/close_icon1"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/public_pop_close"
+                android:layout_width="44dp"
+                android:layout_height="44dp" />
+            <TextView
+                android:text="确认手机号码"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#383838"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <TextView
+            android:text="输入本次注册的手机号"
+            android:textColor="#666666"
+            android:textSize="14dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:background="@drawable/public_button_gray_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/login_phone" />
+
+            <EditText
+                android:id="@+id/phone_number_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="11"
+                android:hint="请填写手机号"
+                android:textColorHint="@color/hint_color"
+                android:singleLine="true"
+                android:textSize="15dp" />
+            <Button
+                android:id="@+id/username_clear"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:background="@mipmap/clear"
+                android:visibility="invisible" />
+        </LinearLayout>
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"></View>
+        <TextView
+            android:text="手机号是验证是否获得奖励的唯一标识，切勿胡乱填写"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:layout_marginBottom="11dp"
+            android:textColor="@color/public_red_orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/submit_btn"
+            android:text="提 交"
+            android:textColor="#ffffff"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/public_button_orange"
+            android:layout_width="match_parent"
+            android:layout_height="42.5dp" />
+    </LinearLayout>
+
+</LinearLayout>

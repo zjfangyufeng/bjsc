@@ -1,0 +1,335 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f4f4f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/maintab_activity_head_lay"
+        android:layout_width="fill_parent"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:layout_height="47.5dp" >
+
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@mipmap/public_return" />
+
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="锁屏设置"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/success_lay"
+        android:scrollbars="none"
+        android:layout_below="@+id/maintab_activity_head_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/xiaomi_special_setting"
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:text="小米特别设置"
+                    android:textColor="#666666"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="若不设置,收益减少75.01%"
+                    android:textColor="#ababab"
+                    android:textSize="9dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View
+                android:background="@mipmap/public_line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+            <LinearLayout
+                android:id="@+id/set_notification_listener_service_lay"
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:text="稳定运行设置"
+                    android:textColor="#666666"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="开启后豆豆趣玩运行更稳定"
+                    android:textColor="#ababab"
+                    android:textSize="9dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <View
+                android:background="@mipmap/public_line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <TextView
+                    android:text="快捷启动应用"
+                    android:textColor="#666666"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/shortcut_launch_question"
+                    android:src="@mipmap/user_install_question"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp" />
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"></View>
+                <CheckBox
+                    android:id="@+id/shortcut_launch_checkbox"
+                    android:button="@null"
+                    android:background="@drawable/public_user_switch_selector"
+                    android:layout_width="45dp"
+                    android:layout_height="25dp" />
+
+            </LinearLayout>
+            <View
+                android:background="@mipmap/public_line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+            <LinearLayout
+                android:id="@+id/choose_app_lay"
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <TextView
+                    android:id="@+id/shortcut_launch_tv"
+                    android:text="选择应用"
+                    android:textColor="#ababab"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"></View>
+                <ImageView
+                    android:button="@null"
+                    android:src="@mipmap/public_unfold"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+            </LinearLayout>
+            <View
+                android:background="@mipmap/public_line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+
+            <View
+                android:layout_marginTop="25dp"
+                android:background="@mipmap/public_line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <TextView
+                    android:text="开启解锁界面"
+                    android:textColor="#666666"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"></View>
+                <CheckBox
+                    android:id="@+id/lockscreen_checkbox"
+                    android:button="@null"
+                    android:background="@drawable/public_user_switch_selector"
+                    android:layout_width="45dp"
+                    android:layout_height="25dp" />
+
+            </LinearLayout>
+            <View
+                android:background="@mipmap/public_line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <TextView
+                    android:text="开启消息通知"
+                    android:textColor="#666666"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"></View>
+                <CheckBox
+                    android:id="@+id/message_notification_checkbox"
+                    android:button="@null"
+                    android:background="@drawable/public_user_switch_selector"
+                    android:layout_width="45dp"
+                    android:layout_height="25dp" />
+
+            </LinearLayout>
+            <View
+                android:background="@mipmap/public_line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:clickable="true"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <TextView
+                    android:text="开启答题悬浮窗"
+                    android:textColor="#666666"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/data_flow_intelligent_question"
+                    android:src="@mipmap/user_install_question"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp" />
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"></View>
+                <CheckBox
+                    android:id="@+id/checkbox_question_task_float_window"
+                    android:button="@null"
+                    android:background="@drawable/public_user_switch_selector"
+                    android:layout_width="45dp"
+                    android:layout_height="25dp" />
+
+            </LinearLayout>
+            <View
+                android:background="@mipmap/public_line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+
+            <View
+                android:layout_marginTop="25dp"
+                android:background="@mipmap/public_line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+            <Button
+                android:id="@+id/clear_apk_btn"
+                android:layout_width="fill_parent"
+                android:paddingLeft="20dp"
+                android:layout_height="47.5dp"
+                android:gravity="left|center_vertical"
+                android:text="清理安装包"
+                android:background="#ffffff"
+                android:textColor="#666666"
+                android:textSize="15dp" />
+            <View
+                android:background="@mipmap/public_line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+
+            <View
+                android:layout_marginTop="25dp"
+                android:background="@mipmap/public_line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+            <Button
+                android:id="@+id/exit_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="47.5dp"
+                android:text="退出登录"
+                android:background="#ffffff"
+                android:textColor="#fc6e51"
+                android:textSize="15dp" />
+            <View
+                android:layout_marginBottom="20dp"
+                android:background="@mipmap/public_line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="1px"></View>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+

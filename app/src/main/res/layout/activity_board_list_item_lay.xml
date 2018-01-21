@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="105dp">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/name_tv"
+            android:textColor="#383838"
+            android:layout_toLeftOf="@+id/newprice_tv"
+            android:text="青花瓷"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="2"
+            android:gravity="center_vertical"
+            android:textSize="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_alignParentBottom="true"
+            android:textColor="#c0c0c0"
+            android:text="2015-8-25"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/hot_iv"
+            android:src="@mipmap/uesr_me_hot"
+            android:visibility="visible"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/tv_time"
+            android:layout_alignParentBottom="true"
+            android:layout_width="35dp"
+            android:layout_height="15dp" />
+        <ImageView
+            android:id="@+id/new_iv"
+            android:src="@mipmap/uesr_me_new"
+            android:visibility="visible"
+            android:layout_toRightOf="@+id/hot_iv"
+            android:layout_alignParentBottom="true"
+            android:layout_width="35dp"
+            android:layout_height="15dp" />
+    </RelativeLayout>
+
+    <com.ddfun.customerview.RoundCornerImageView
+        android:id="@+id/icon_iv"
+        android:scaleType="fitXY"
+        android:layout_marginRight="12.5dp"
+        android:layout_marginLeft="12.5dp"
+        android:layout_width="100dp"
+        android:layout_height="65dp" />
+</LinearLayout>

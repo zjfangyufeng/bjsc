@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myns="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/answer_box_bg"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/tv_page_indication"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_remain"
+            android:textSize="12dp"
+            android:textColor="@color/public_orange"
+            android:text="剩余111"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="21dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:text="新浪微博"
+            android:textSize="16dp"
+            android:textColor="#383838"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/layout_high_light"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:minWidth="230dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_reward"
+                android:text="0.1~2.4元"
+                android:textSize="30dp"
+                android:textColor="@color/public_red_orange"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/btn_task_rewards_detail"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="任务总奖励"
+                    android:textColor="@color/public_red_orange"
+                    android:textSize="12dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@mipmap/public_answer_more_red"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@mipmap/public_line_title"
+                android:layout_width="37dp"
+                android:layout_height="1px"></View>
+            <TextView
+                android:id="@+id/tv_title"
+                android:text="带你欣赏世界上每一个巴拉巴拉吧"
+                android:textSize="12dp"
+                android:textColor="#ababab"
+                android:maxLines="1"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@mipmap/public_line_title"
+                android:layout_width="37dp"
+                android:layout_height="1px"></View>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.ddfun.customerview.FitWithHeightImageView
+                android:id="@+id/iv_app_shot1"
+                myns:height="330px"
+                myns:designWidth="200px"
+                android:scaleType="fitXY"
+                android:layout_width="200px"
+                android:layout_height="match_parent" />
+            <View
+                android:layout_width="8dp"
+                android:layout_height="0dp"></View>
+            <com.ddfun.customerview.FitWithHeightImageView
+                android:id="@+id/iv_app_shot2"
+                myns:height="330px"
+                myns:designWidth="200px"
+                android:scaleType="fitXY"
+                android:layout_width="200px"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <com.ddfun.customerview.CountDownTextView
+            android:id="@+id/tv_remain_time"
+            android:textSize="12dp"
+            android:textColor="#555555"
+            android:maxLines="1"
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_task_request"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:textColor="@color/public_orange"
+            android:layout_marginBottom="36dp"
+            android:maxLines="2"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:background="@mipmap/answer_button"
+        android:orientation="horizontal"
+        android:layout_above="@+id/tv_page_indication"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="43dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_layout_bottom_lay1"
+                android:layout_gravity="center_vertical"
+                android:layout_centerHorizontal="true"
+                android:text="下载体验"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_layout_bottom_lay2"
+                android:layout_gravity="bottom"
+                android:layout_centerHorizontal="true"
+                android:text="(32.25M)"
+                android:textColor="#ffffff"
+                android:textSize="10dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_page_indication"
+        android:text="3/13"
+        android:textSize="10dp"
+        android:textColor="#ababab"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp" />
+    <ImageView
+        android:src="@mipmap/answer_app_bg"
+        android:layout_marginTop="21dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/symbol_filling_task"
+        android:visibility="gone"
+        android:text="填空型"
+        android:textColor="@color/pure_white"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:background="@mipmap/answer_sign_corner"
+        android:layout_marginTop="27dp"
+        android:layout_width="55dp"
+        android:layout_height="20dp" />
+    <ImageView
+        android:id="@+id/iv_icon_task_no_remain"
+        android:background="@mipmap/public_info_loot"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_width="62dp"
+        android:layout_height="62dp" />
+    <com.ddfun.customerview.RoundCornerImageView
+        android:id="@+id/iv_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <View
+        android:id="@+id/symbol_novice"
+        android:background="@mipmap/answer_app_novicemark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_width="56dp"
+        android:layout_height="17dp" />
+
+</RelativeLayout>

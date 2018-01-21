@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+    <ImageView
+        android:id="@+id/icon_iv"
+        android:layout_marginRight="12dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="答题任务"
+            android:maxLines="1"
+            android:textColor="#383838"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_sub_title"
+            android:text="按要求答题"
+            android:textColor="#ababab"
+            android:textSize="12dp"
+            android:maxLines="1"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btn_status"
+        android:text="去完成"
+        android:background="@drawable/index_task_buttom"
+        android:textColor="@color/pure_white"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp" />
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <View
+                android:id="@+id/btn_close"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/public_pop_close"
+                android:layout_width="44dp"
+                android:layout_height="44dp"></View>
+            <TextView
+                android:text="绑定手机号"
+                android:textColor="#383838"
+                android:textSize="16dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="@mipmap/public_line_side"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <TextView
+            android:text="输入与注册或绑定游戏账号一致手机号,即可同步账号获取奖励"
+            android:textSize="14dp"
+            android:textColor="#666666"
+            android:lineSpacingExtra="7dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/public_button_gray_empty"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="15dip"
+                android:layout_height="15dip"
+                android:layout_marginLeft="7dip"
+                android:layout_marginRight="7dp"
+                android:src="@mipmap/login_phone" />
+            <EditText
+                android:id="@+id/et_phone_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="11"
+                android:hint="请填写手机号"
+                android:textColorHint="@color/hint_color"
+                android:textColor="#555555"
+                android:singleLine="true"
+                android:textSize="14dp" />
+            <Button
+                android:id="@+id/username_clear"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:background="@mipmap/clear"
+                android:visibility="invisible" />
+        </LinearLayout>
+        <TextView
+            android:text="手机号不一致将无法获取奖励!请认真填写"
+            android:textSize="12dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/public_red_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_submit"
+            android:text="提交"
+            android:background="@drawable/public_button_orange"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="330dp"
+            android:layout_height="43dp" />
+    </LinearLayout>
+
+</LinearLayout>

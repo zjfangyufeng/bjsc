@@ -1,0 +1,4 @@
+include ':app',
+':imgloader',
+':qrcode',
+':common'

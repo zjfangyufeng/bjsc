@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4">
+    <RelativeLayout
+        android:id="@+id/maintab_activity_head_lay"
+        android:layout_width="fill_parent"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:layout_height="47.5dp" >
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@mipmap/public_return" />
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="合作游戏平台须知"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/success_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/maintab_activity_head_lay"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:background="@color/public_orange"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@mipmap/recreation_ju_doudou"
+                        android:layout_weight="1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <ImageView
+                        android:src="@mipmap/withdraw_transfer_icon"
+                        android:layout_weight="1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                    <ImageView
+                        android:src="@mipmap/recreation_ju_over"
+                        android:layout_weight="1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+                <TextView
+                    android:paddingTop="20dp"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:paddingRight="40dp"
+                    android:paddingLeft="40dp"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"
+                    android:lineSpacingExtra="3dp"
+                    android:text="*此平台为第三方合作游戏娱乐平台"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/recreation_rule_icon1"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="游戏娱乐需要消耗巴豆,可用豆豆余额直接进行充值,起充金额1元起。"
+                        android:textSize="13dp"
+                        android:lineSpacingExtra="5dp"
+                        android:textColor="#666666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="*可充值余额不包含注册豆豆趣玩时的'注册奖励金额'。"
+                        android:textSize="13dp"
+                        android:lineSpacingExtra="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/public_orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/recreation_rule_icon2"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="豆豆余额充值后将对等转化为巴豆。"
+                        android:textSize="13dp"
+                        android:lineSpacingExtra="5dp"
+                        android:textColor="#666666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="*已充值的巴豆不能再转化为豆豆余额。"
+                        android:textSize="13dp"
+                        android:lineSpacingExtra="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/public_orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/recreation_rule_icon3"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="游戏娱乐竞猜获奖后,可在第三方娱乐大厅兑换商城兑换相应商品。"
+                        android:textSize="13dp"
+                        android:lineSpacingExtra="5dp"
+                        android:textColor="#666666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn"
+                android:text="立即参与"
+                android:textColor="@color/pure_white"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/recreation_rule_buttom"
+                android:layout_marginTop="45dp"
+                android:layout_width="260dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

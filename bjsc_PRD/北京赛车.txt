@@ -1,0 +1,15 @@
+极光账号  dcj2017122809  密码  YBGJqwaszx8090
+
+
+走势图 七乐彩 http://i.sdcp.cn/zst/qlc.do
+走势图 双色球 http://i.sdcp.cn/zst/ssq.do
+走势图 3d http://i.sdcp.cn/zst/3d.do
+走势图 群英会 http://i.sdcp.cn/zst/qyh.do
+
+中奖查询 http://app.sdcp.cn/fccms/site/num/search21.jsp
+投注查询 http://app.sdcp.cn/fccms/site/num/tzsearch.jsp
+
+模拟摇奖 七乐彩 http://api.sdcp.cn/weixin/tools/xuanhao/yj_qlc/
+模拟摇奖 双色球 http://api.sdcp.cn/weixin/tools/xuanhao/yj_ssq/
+模拟摇奖 3d http://api.sdcp.cn/weixin/tools/xuanhao/yj_3d/
+

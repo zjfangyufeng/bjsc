@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingLeft="25dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/symbol_number"
+        android:text="1"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/pure_white"
+        android:background="@color/public_orange"
+        android:layout_marginRight="6dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"></TextView>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_toRightOf="@+id/symbol_number"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="冲级1.2金币奖励"
+            android:textSize="13dp"
+            android:textColor="#555555"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:text="截至什么什么,最先达到多少多少,可以获取多少多少...."
+            android:textSize="12dp"
+            android:textColor="#ababab"
+            android:lineSpacingExtra="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/symbol_received"
+        android:visibility="gone"
+        android:background="@mipmap/public_info_receive"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp"
+        android:layout_width="62dp"
+        android:layout_height="62dp"></View>
+</RelativeLayout>

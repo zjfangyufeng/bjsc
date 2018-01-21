@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/public_orange"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tv_title"
+                android:text="关注微信公众号"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/btn_close"
+                android:src="@mipmap/public_pop_indent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/public_pop_card_bg_w"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="390dp">
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_marginTop="29dp"
+                android:layout_marginBottom="18dp"
+                android:src="@mipmap/public_pop_indent"
+                android:layout_width="300dp"
+                android:layout_height="250dp" />
+            <TextView
+                android:textSize="13dp"
+                android:textColor="#555555"
+                android:layout_marginBottom="18dp"
+                android:text="截屏保存二维码,使用微信扫一扫"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_commit"
+                android:background="@drawable/public_button_green"
+                android:text="去打开微信,扫一扫"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

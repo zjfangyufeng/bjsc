@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="21dp"
+        android:textSize="18dp"
+        android:textColor="#fe8417"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="12dp"
+            android:textColor="#fc6e51"
+            android:layout_marginTop="15dp"
+            android:text="总奖励："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/total_reward_tv"
+            android:textSize="32.5dp"
+            android:layout_marginTop="7dp"
+            android:textColor="#fc6e51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/msg_tv"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:lineSpacingMultiplier="1.2"
+        android:textSize="13dp"
+        android:textColor="#ababab"
+        android:layout_marginBottom="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

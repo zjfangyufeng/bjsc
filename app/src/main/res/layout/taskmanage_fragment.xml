@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/loading_progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true" />
+
+    <include layout="@layout/net_error_layout" />
+    <ScrollView
+        android:id="@+id/taskmanage_fragment1_success_lay"
+        android:scrollbars="none"
+        android:layout_below="@+id/maintab_activity_head_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/top_hint_lay"
+                android:background="@drawable/public_top_orange"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="55dp">
+                <TextView
+                    android:textSize="13dp"
+                    android:textColor="#999999"
+                    android:text="每天有"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="13dp"
+                    android:textColor="#fc6e51"
+                    android:text="6次新任务"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="13dp"
+                    android:textColor="#999999"
+                    android:text="机会，每抢到一个任务即使用一次机会"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/no_to_be_activated_lay"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/user_task_goom_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/user_task_goon"/>
+                <TextView
+                    android:id="@+id/user_task_goom_tv"
+                    android:textSize="18dp"
+                    android:textColor="#999999"
+                    android:layout_marginTop="50dp"
+                    android:layout_below="@id/user_task_goom_iv"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="目前还没有新的答题任务"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="14dp"
+                    android:textColor="#ababab"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/user_task_goom_iv"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="换个时间段再来吧！"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/newperson_task_lay"
+                android:clickable="true"
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="75dp">
+                <LinearLayout
+                    android:background="@drawable/user_task_new_bg_left"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="￥"
+                            android:textColor="#ffffff"
+                            android:textSize="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/newperson_total_money_tv"
+                            android:text="0.00"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="元"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <TextView
+                        android:text="现金奖励"
+                        android:textColor="#018779"
+                        android:textSize="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View
+                    android:background="@mipmap/user_task_new_line"
+                    android:layout_width="15px"
+                    android:layout_height="match_parent"></View>
+                <RelativeLayout
+                    android:background="@drawable/user_task_new_bg_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="你还没有完成新手任务\n完成任务即可领取现金奖励>>"
+                        android:layout_centerInParent="true"
+                        android:textColor="#ffffff"
+                        android:textSize="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:src="@mipmap/user_task_new_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/day_task_lay"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@mipmap/public_line_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px">
+                </View>
+                <LinearLayout
+                    android:id="@+id/day_task_item_container"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+                <View
+                    android:background="@mipmap/public_line_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px">
+                </View>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/will_expired_task_lay"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="@mipmap/public_line_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px">
+                </View>
+                <LinearLayout
+                    android:id="@+id/will_expired_task_item_container"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+                <View
+                    android:background="@mipmap/public_line_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px">
+                </View>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

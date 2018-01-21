@@ -1,0 +1,288 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:scrollbars="none"
+    tools:context="com.ddfun.activity.MyAccountActivity">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#f4f4f4">
+        <RelativeLayout
+            android:id="@+id/maintab_activity_head_lay"
+            android:layout_width="fill_parent"
+            android:background="@color/public_orange"
+            android:paddingLeft="8dp"
+            android:paddingRight="20dp"
+            android:layout_height="47.5dp" >
+
+            <ImageView
+                android:id="@+id/maintab_activity_head_left_btn"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@mipmap/public_return" />
+            <TextView
+                android:id="@+id/maintab_activity_head_middle"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="关于豆豆趣玩"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/logo_iv"
+            android:src="@mipmap/push"
+            android:layout_marginTop="65dp"
+            android:layout_width="85dp"
+            android:layout_height="85dp" />
+        <TextView
+            android:text="@string/app_name"
+            android:textColor="#666666"
+            android:textSize="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="7.5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="当前版本："
+                android:textColor="#ababab"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/versionName"
+                android:textColor="#ababab"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="25dp"
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/novice_lay"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="17.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@mipmap/user_about_icon_novice"
+                android:layout_marginRight="15dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:text="新手教程"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/public_unfold"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <ImageView
+            android:paddingLeft="15dp"
+            android:background="#ffffff"
+            android:src="@mipmap/public_line_middle"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></ImageView>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/layout_question_task_guide"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="17.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@mipmap/user_about_icon_novice"
+                android:layout_marginRight="15dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:text="答题任务教程"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/public_unfold"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <ImageView
+            android:paddingLeft="15dp"
+            android:background="#ffffff"
+            android:src="@mipmap/public_line_middle"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></ImageView>
+        <LinearLayout
+            android:id="@+id/check_update_lay"
+            android:gravity="center_vertical"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="17.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@mipmap/user_about_icon_update"
+                android:layout_marginRight="15dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:text="版本更新"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/new_version_iv"
+                android:src="@mipmap/user_about_new"
+                android:layout_marginRight="2.5dp"
+                android:layout_width="35dp"
+                android:layout_height="15dp" />
+            <ImageView
+                android:src="@mipmap/public_unfold"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <ImageView
+            android:paddingLeft="15dp"
+            android:background="#ffffff"
+            android:src="@mipmap/public_line_middle"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></ImageView>
+
+        <LinearLayout
+            android:id="@+id/partner_lay"
+            android:gravity="center_vertical"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="17.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@mipmap/user_about_icon_cooperation"
+                android:layout_marginRight="15dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:text="市场合作"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/public_unfold"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <ImageView
+            android:paddingLeft="15dp"
+            android:background="#ffffff"
+            android:src="@mipmap/public_line_middle"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></ImageView>
+        <LinearLayout
+            android:id="@+id/official_site_lay"
+            android:gravity="center_vertical"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="17.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@mipmap/user_about_icon_official"
+                android:layout_marginRight="15dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:text="豆豆趣玩官网"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/public_unfold"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <ImageView
+            android:paddingLeft="15dp"
+            android:background="#ffffff"
+            android:src="@mipmap/public_line_middle"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></ImageView>
+        <LinearLayout
+            android:id="@+id/layout_agreement"
+            android:gravity="center_vertical"
+            android:background="#ffffff"
+            android:paddingRight="15dp"
+            android:paddingLeft="17.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@mipmap/user_about_doudou_agreement"
+                android:layout_marginRight="15dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:text="服务协议"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/public_unfold"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+    </LinearLayout>
+</ScrollView>

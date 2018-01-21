@@ -1,0 +1,121 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--<item name="android:background">@color/public_orange</item>-->
+    </style>
+
+    <style name="DimTransparentStyle">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="DialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="tab_activity_radiogbutton_style">
+        <item name="android:textSize">13.0dp</item>
+        <item name="android:background">@drawable/tab_activity_radiogbutton_selector</item>
+        <item name="android:textColor">@drawable/tab_activity_radiogbutton_text_selector</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="task_manage_activity_tab_radio_button_style">
+        <item name="android:textSize">13.0dp</item>
+        <item name="android:background">@drawable/tab_task_manage_activity_radiogbutton_selector</item>
+        <item name="android:textColor">@drawable/tab_task_manage_activity_radiogbutton_text_selector</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="screenshot_cpl_radio_button_style">
+        <item name="android:textSize">12.0dp</item>
+        <item name="android:background">@drawable/screenshot_cpl_radio_button_selector</item>
+        <item name="android:textColor">@drawable/screenshot_cpl_radio_button_text_selector</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="tab_activity_status_progress_radio_button_style">
+        <item name="android:textSize">14.0dp</item>
+        <item name="android:background">@drawable/tab_activity_qtask_radiogbutton_selector</item>
+        <item name="android:textColor">@drawable/tab_activity_radiogbutton_text_selector</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_height">45dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="share_list_dialog_style">
+        <!-- 设置进入动画 -->
+        <item name="android:windowEnterAnimation">@anim/share_list_dialog_in_anim</item>
+        <!-- 设置退出动画 -->
+        <item name="android:windowExitAnimation">@anim/share_list_dialog_out_anim</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="round_corner_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="btn_get_verification_code">
+        <item name="android:background">@drawable/get_verification_code_bg_selector</item>
+        <item name="android:textColor">@drawable/get_verification_code_text_selector</item>
+    </style>
+
+</resources>

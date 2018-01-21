@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    android:background="#f4f4f4">
+    <RelativeLayout
+        android:id="@+id/maintab_activity_head_lay"
+        android:layout_width="fill_parent"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:layout_height="47.5dp" >
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@mipmap/public_return" />
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="微信账号"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@drawable/public_user_10shadow"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="235dp">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/user_mine_wx"
+            android:layout_marginTop="25dp"
+            android:layout_width="80dp"
+            android:layout_height="25dp" />
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="#fafafc"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    android:text="胖子胖子"
+                    android:textColor="#888888"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_real_name"
+                    android:text="mutouren123"
+                    android:textColor="#888888"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:layout_marginTop="4dp"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <com.ddfun.customerview.CircularImage
+                android:id="@+id/iv"
+                android:layout_centerHorizontal="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

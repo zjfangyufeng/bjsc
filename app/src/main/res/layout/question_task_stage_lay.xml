@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingRight="4dp"
+    android:layout_height="69dp">
+
+    <!--padding for enough height-->
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_marginLeft="17dp"
+        android:layout_height="69dp"
+        android:layout_width="29dp" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_marginLeft="41.5dp"
+        android:textColor="#f9a61a"
+        android:textSize="12dp"
+        android:layout_marginTop="17dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/guide_tv"
+        android:layout_marginLeft="41.5dp"
+        android:textColor="#f9a61a"
+        android:layout_below="@+id/title_tv"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/reward_tv"
+        android:textColor="#f9a61a"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/split_line"
+        android:background="@mipmap/draw_answer_finish_axis_xian"
+        android:layout_marginLeft="14.25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1px">
+    </View>
+
+</RelativeLayout>

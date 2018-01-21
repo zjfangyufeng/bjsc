@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:background="#ffffff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/refresh_lay"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@mipmap/public_break_pop"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:text="刷新页面"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <LinearLayout
+            android:id="@+id/onpen_on_browse_lay"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:src="@mipmap/public_browser_pop"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:text="在浏览器中打开"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#666666"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px">
+        </View>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="47.5dp">
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:textColor="@color/public_orange"
+                android:textSize="17dp"
+                android:text="取消"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

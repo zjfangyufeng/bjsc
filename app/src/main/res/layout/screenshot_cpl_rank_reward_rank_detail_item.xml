@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/layout_rank_detail_item"
+    android:layout_width="match_parent"
+    android:layout_height="35dp">
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_rank_number"
+            android:background="@mipmap/game_cpl_leveling_no_gray_icon"
+            android:textColor="#888888"
+            android:textSize="8dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_rank_account"
+            android:text="游戏账号"
+            android:textColor="#555555"
+            android:textSize="12dp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/symbol_is_me"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/tv_rank_account"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/game_cpl_ranking_me_ico"
+            android:layout_width="33dp"
+            android:layout_height="18dp"></ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_achieve_time"
+        android:text="领取时间"
+        android:textColor="#555555"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

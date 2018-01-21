@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/taskmanage_fragment1_success_lay"
+        android:scrollbars="none"
+        android:layout_below="@+id/maintab_activity_head_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dd_logo_iv"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/user_task_info_dd_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/user_task_info_container"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="13dp"
+                android:padding="0dp"
+                android:orientation="vertical"
+                android:background="@drawable/user_task_info_con_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/todo_tv"
+                android:textSize="12dp"
+                android:textColor="#999999"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/public_button_red"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <include layout="@layout/screen_shot_coupon_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+            </include>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

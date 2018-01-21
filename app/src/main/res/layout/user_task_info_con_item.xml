@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@null"
+    android:layout_width="41dp"
+    android:layout_height="15dp">
+
+    <LinearLayout
+        android:background="@null"
+        android:layout_width="41dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/con_iv"
+            android:background="@mipmap/user_task_info_con_bar_fail"
+            android:layout_width="15dp"
+            android:layout_height="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/submit_sucessfully_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="57dp"
+    android:visibility="gone"
+    android:layout_gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/img_lay"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/hint_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/account_abnormal_right" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text="提交成功"
+            android:textColor="#2bc6b6" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hint_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:layout_marginTop="30dp"
+        android:text="申诉结果将尽快发送至您的邮箱，\n请注意查收。"
+        android:textColor="#999999" />
+
+    <TextView
+        android:text="知道了"
+        android:id="@+id/i_know_tv"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/public_button_white"
+        android:textColor="@color/public_orange"
+        android:textSize="17dp"
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+    </TextView>
+
+</LinearLayout>

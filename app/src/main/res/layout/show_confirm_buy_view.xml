@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/close_icon1"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/public_pop_close"
+            android:layout_width="44dp"
+            android:layout_height="44dp" />
+        <TextView
+            android:text="确认购买信息"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="#383838"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <View
+        android:background="@mipmap/public_line_middle"
+        android:layout_width="match_parent"
+        android:layout_height="1px"></View>
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:textSize="14dp"
+        android:textColor="#666666"
+        android:text="为保证您的资金安全，请输入豆豆趣玩密码"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+    <LinearLayout
+        android:background="@drawable/public_button_gray_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/login_password" />
+
+        <EditText
+            android:id="@+id/userpwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="14"
+            android:hint="请输入登录密码"
+            android:textColorHint="@color/hint_color"
+            android:singleLine="true"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/userpwd_btn"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="15dp"
+            android:background="@mipmap/login_close" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"></View>
+
+    <Button
+        android:id="@+id/submit_buy_btn"
+        android:text="立即购买"
+        android:textColor="#ffffff"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/public_button_orange"
+        android:layout_width="match_parent"
+        android:layout_height="42.5dp" />
+</LinearLayout>

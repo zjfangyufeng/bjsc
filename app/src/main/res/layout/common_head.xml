@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/maintab_activity_head_lay"
+    android:layout_width="fill_parent"
+    android:background="@color/public_orange"
+    android:paddingLeft="8dp"
+    android:paddingRight="20dp"
+    android:layout_height="47.5dp" >
+
+    <ImageView
+        android:id="@+id/maintab_activity_head_left_btn"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:src="@mipmap/public_return" />
+
+    <TextView
+        android:id="@+id/maintab_activity_head_middle"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/maintab_activity_head_right_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="登录"
+        android:textSize="12dp"
+        android:textColor="#ffffff"
+        android:clickable="true" />
+
+</RelativeLayout>

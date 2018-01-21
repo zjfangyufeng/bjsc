@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="280dp"
+        android:background="@drawable/public_pop_bg"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/success_lay"
+            android:gravity="center"
+            android:layout_marginTop="28dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_centerHorizontal="true"
+                android:textSize="15dp"
+                android:layout_marginTop="35dp"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="试玩奖励 :"
+                android:id="@+id/hint"
+                android:layout_below="@+id/name_tv"
+                android:layout_toLeftOf="@+id/reward_money_tv"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="0.05元"
+                android:id="@+id/reward_money_tv"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/name_tv"
+                android:layout_centerHorizontal="true"
+                android:textSize="15dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#fc6e51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:id="@+id/msg_tv"
+                android:layout_toRightOf="@+id/reward_money_tv"
+                android:text="是否下载？"
+                android:layout_below="@+id/name_tv"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/msg_tv"
+            android:id="@+id/choose_lay"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/public_button_gray"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="暂不下载"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/confirm_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/public_button_orange"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="立即下载"
+                android:textColor="#ffffff"
+                android:textSize="17dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/app_logo_lay"
+            android:layout_height="56dp"
+            android:layout_width="56dp"
+            android:gravity="center"
+            android:background="@mipmap/draw_pop_app_logo_bg"
+            android:layout_centerHorizontal="true">
+
+            <com.ddfun.customerview.BigRoundCornerImageViewFixXY
+                android:id="@+id/app_logo_iv"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

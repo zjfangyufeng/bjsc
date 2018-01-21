@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/screen_card_info_brand_normal"
+    android:id="@+id/layout_rank_detail_item"
+    android:layout_margin="4dp"
+    android:layout_width="88dp"
+    android:layout_height="103dp">
+    <LinearLayout
+        android:id="@+id/layout_started"
+        android:visibility="gone"
+        android:background="@mipmap/screen_card_info_brand_pressed"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_total"
+            android:text="完成2个截图"
+            android:textSize="12dp"
+            android:textColor="#fe7222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_reward"
+            android:text="1.00元"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#fe7222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_progress"
+            android:text="进度:1/2"
+            android:background="@drawable/activity_screenshot_red_package_task_random_card_text_bg"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="11dp"
+            android:textColor="#d57804"
+            android:layout_width="65dp"
+            android:layout_height="17dp" />
+
+    </LinearLayout>
+    <View
+        android:id="@+id/ui_red_package_available"
+        android:visibility="gone"
+        android:background="@mipmap/screen_card_info_brand_redenvelopes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></View>
+
+</RelativeLayout>

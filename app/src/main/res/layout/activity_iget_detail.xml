@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f4f4f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/maintab_activity_head_lay"
+        android:layout_width="fill_parent"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:layout_height="47.5dp" >
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@mipmap/public_return" />
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/loading_progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true" />
+    <include layout="@layout/net_error_layout" />
+    <LinearLayout
+        android:id="@+id/income_total_lay"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:layout_below="@id/maintab_activity_head_lay"
+        android:paddingRight="15dp"
+        android:paddingLeft="25dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layout_income_total"
+            android:gravity="center_vertical"
+            android:paddingRight="15dp"
+            android:paddingLeft="25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="61dp">
+            <TextView
+                android:id="@+id/iget_type_total"
+                android:textColor="#555555"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/iget_tv"
+                android:text="0.00"
+                android:textColor="@color/public_orange"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:text="元"
+                android:textColor="@color/public_orange"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_invite_income"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="待入账奖励(元)"
+                    android:textSize="12dp"
+                    android:textColor="#ababab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_pending_reward"
+                    android:text="0.00"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/public_orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:background="@mipmap/public_line_side"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="1px"
+                android:layout_height="match_parent"></View>
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="已入账奖励(元)"
+                    android:textSize="12dp"
+                    android:textColor="#ababab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_invite_income"
+                    android:text="0.00"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/public_orange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_below="@+id/maintab_activity_head_lay"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/user_task_goon"/>
+        <TextView
+            android:textSize="15dp"
+            android:textColor="#999999"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="您还没有邀请记录,先去邀请吧!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/success_lay"
+        android:layout_below="@+id/income_total_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_marginTop="@dimen/activity_view_line_space"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <com.ddfun.pulltorefresh.MyPullToRefreshView
+            android:id="@+id/mPullListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.ddfun.pulltorefresh.MyPullToRefreshView>
+    </LinearLayout>
+</RelativeLayout>
+
+
+

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="290dp"
+    android:background="@null"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@null"
+        android:gravity="right"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/exit"
+            android:clickable="true"
+            android:src="@mipmap/public_pop_account_close_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/public_pop_card_bg_w"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/public_orange"
+            android:text="游戏试玩小技巧"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <View
+            android:background="@mipmap/public_line_side"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/pop_game_left_line"
+                android:layout_marginRight="15dp"
+                android:layout_width="13dp"
+                android:layout_height="48dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="抢到任务后,在规定时间内下载安装应用"
+                    android:textSize="12dp"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="#666666"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="请在规定时间内完成任务并上传截图"
+                    android:textSize="12dp"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="#666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:text="第一天任务审核成功后,才能解锁后续任务;请在规定时间内完成任务,超时任务将失败。"
+            android:textSize="12dp"
+            android:lineSpacingExtra="5dp"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="@drawable/investment_tips_dialog_bottom_bg"
+        android:layout_width="match_parent"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/public_invest_remind_ico_iv"
+            android:src="@mipmap/public_invest_remind_ico"
+            android:layout_alignTop="@+id/tv_bottom"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_toRightOf="@+id/public_invest_remind_ico_iv"
+            android:textColor="@color/public_orange"
+            android:textSize="12dp"
+            android:lineSpacingExtra="4dp"
+            android:text="游戏包大,下载较慢,请耐心等待"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

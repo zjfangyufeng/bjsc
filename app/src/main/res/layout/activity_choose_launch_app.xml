@@ -1,0 +1,245 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ddfun.activity.HomeActivity"
+    android:background="#f4f4f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/maintab_activity_head_lay"
+        android:layout_width="fill_parent"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:layout_height="47.5dp" >
+
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@mipmap/public_return" />
+
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="快捷启动应用"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/loading_progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true" />
+
+    <include layout="@layout/net_error_layout" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/success_lay"
+        android:layout_below="@+id/maintab_activity_head_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:paddingRight="17.5dp"
+            android:paddingLeft="17.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="选择快捷应用"
+                android:textColor="#666666"
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/user_install_up_point"
+                android:gravity="center_vertical"
+                android:layout_width="10dp"
+                android:layout_height="10dp" />
+            <TextView
+                android:text="可选择3个您最需要的应用"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/hint_color"
+                android:textSize="12dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:background="#ffffff"
+            android:paddingLeft="32.5dp"
+            android:paddingRight="32.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/icon1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/user_install_up_add"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp" />
+                    <ImageView
+                        android:id="@+id/close_icon1"
+                        android:visibility="invisible"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/user_install_up_close"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_below="@+id/rl1"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:text="未设置"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#666666"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/icon2"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/user_install_up_add"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp" />
+                    <ImageView
+                        android:id="@+id/close_icon2"
+                        android:visibility="invisible"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/user_install_up_close"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_below="@+id/rl2"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:text="未设置"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#666666"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/rl3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/icon3"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/user_install_up_add"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp" />
+                    <ImageView
+                        android:id="@+id/close_icon3"
+                        android:visibility="invisible"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/user_install_up_close"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_below="@+id/rl3"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:text="未设置"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#666666"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_marginTop="@dimen/activity_view_line_space"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <TextView
+            android:paddingLeft="17.5dp"
+            android:text="应用列表"
+            android:background="#ffffff"
+            android:textColor="#666666"
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <ListView
+            android:id="@+id/lv"
+            android:scrollbars="none"
+            android:footerDividersEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+

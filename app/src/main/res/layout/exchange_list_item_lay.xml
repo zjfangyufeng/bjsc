@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.ddfun.customerview.RoundCornerImageView
+            android:id="@+id/icon_iv"
+            android:scaleType="fitXY"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="84dp"
+            android:layout_height="57dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/name_tv"
+                android:textColor="#383838"
+                android:layout_toLeftOf="@+id/newprice_tv"
+                android:layout_marginBottom="5dp"
+                android:maxLines="2"
+                android:gravity="center_vertical"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_below="@+id/name_tv"
+                android:textColor="#999999"
+                android:text="￥"
+                android:gravity="center_vertical"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/cost_tv"
+                android:layout_below="@+id/name_tv"
+                android:layout_toRightOf="@+id/tv1"
+                android:layout_marginRight="10dp"
+                android:textColor="#999999"
+                android:gravity="center_vertical"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_below="@+id/name_tv"
+                android:layout_toRightOf="@+id/cost_tv"
+                android:textColor="#ababab"
+                android:gravity="center_vertical"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/state_tv"
+                android:layout_below="@+id/cost_tv"
+                android:textColor="#2bc6b6"
+                android:text="审核中"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:textSize="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fail_cause_lay"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="4px"
+            android:layout_height="match_parent"
+            android:background="#ffa317" />
+
+        <TextView
+            android:id="@+id/fail_cause_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_marginLeft="5dp"
+            android:textSize="12dp"
+            android:textColor="#ffa317"
+            android:text="失败原因: "/>
+
+    </LinearLayout>
+
+</LinearLayout>

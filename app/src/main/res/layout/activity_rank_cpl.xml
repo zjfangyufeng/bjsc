@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f4f4f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/maintab_activity_head_lay"
+        android:layout_width="fill_parent"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:layout_height="47.5dp" >
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@mipmap/public_return" />
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:text="排行榜"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/loading_progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true" />
+    <include layout="@layout/net_error_layout" />
+    <LinearLayout
+        android:id="@+id/success_lay"
+        android:layout_below="@+id/maintab_activity_head_lay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.ddfun.customerview.AutoAdjustHeightImageView_full_width
+            android:id="@+id/iv_top"
+            android:src="@mipmap/game_cpl_ranking_top_bg"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+        <LinearLayout
+            android:id="@+id/layout_activity"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/user_index_more_middle_bg"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_marginTop="-50dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" >
+            <com.ddfun.customerview.CircularImage
+                android:id="@+id/iv_icon"
+                android:layout_marginRight="10dp"
+                android:layout_width="43dp"
+                android:layout_height="43dp" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:text="10646511565"
+                        android:textSize="15dp"
+                        android:maxLines="1"
+                        android:textColor="#383838"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:background="@mipmap/game_cpl_ranking_me_ico"
+                        android:layout_width="33dp"
+                        android:layout_height="16dp"></View>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:background="@mipmap/game_cpl_ranking_ico"
+                        android:layout_marginRight="7dp"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp" />
+                    <TextView
+                        android:text="排名："
+                        android:textSize="12dp"
+                        android:textColor="#ababab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_serial_number"
+                        android:text="99"
+                        android:textSize="12dp"
+                        android:textColor="@color/public_orange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:background="@mipmap/public_line_side"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="1px"
+                        android:layout_height="12dp"></View>
+                    <TextView
+                        android:id="@+id/tv_sub_title"
+                        android:text="66 99"
+                        android:textSize="12dp"
+                        android:maxLines="1"
+                        android:textColor="#ababab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_reward"
+                android:text="45元"
+                android:textSize="15dp"
+                android:textColor="@color/public_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/empty_view"
+            android:visibility="gone"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:minHeight="10000dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/cpl_ranking_empty"/>
+            <TextView
+                android:textSize="18dp"
+                android:textColor="#999999"
+                android:layout_marginTop="28dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="快来抢沙发吧!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="14dp"
+                android:textColor="#ababab"
+                android:layout_marginTop="7dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="一大波用户正在抢登排行榜的路上!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:background="@drawable/public_pop_bg"
+        android:orientation="vertical"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/uesr_install_pop_close"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="18dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/msg_tv"
+            android:gravity="center"
+            android:text="确定要退出？\n退出后将无法获得锁屏收入哦！"
+            android:textSize="14dp"
+            android:lineSpacingMultiplier="1.4"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/public_orange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/confirm_btn"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:text="退出登录"
+                android:background="@drawable/public_button_gray"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/cancel_btn"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:text="继续赚钱"
+                android:background="@drawable/public_button_orange"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

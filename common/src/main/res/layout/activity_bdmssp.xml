@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/layout_head"
+        android:background="@color/public_orange"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/loading_progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true" />
+    <include layout="@layout/net_error_layout" />
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_below="@+id/layout_head"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:progressDrawable="@drawable/probar_download_style"
+        android:max="100"
+        android:progress="0"
+        android:layout_height="3px" />
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_below="@+id/pb"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <com.ff.common.custom_view.DraggableView
+        android:id="@+id/view_float"
+        android:visibility="gone"
+        android:src="@mipmap/find_suspension"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.ff.common.custom_view.DraggableView>
+</RelativeLayout>

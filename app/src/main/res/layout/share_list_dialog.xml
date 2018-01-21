@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#F9A71A" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="17.5dp"
+        android:text="分享到"
+        android:textColor="#666666"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="17.5dp"
+        android:background="#ECECEC" />
+
+    <GridView
+        android:id="@+id/share_list_dialog_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:verticalSpacing="32.5dp"
+        android:paddingBottom="32.5dp"
+        android:numColumns="4">
+
+    </GridView>
+</LinearLayout>

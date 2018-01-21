@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/maintab_activity_head_lay"
+            android:layout_width="fill_parent"
+            android:background="@color/pure_white"
+            android:paddingLeft="8dp"
+            android:paddingRight="20dp"
+            android:layout_height="47.5dp" >
+            <ImageView
+                android:id="@+id/maintab_activity_head_left_btn"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@mipmap/public_return_gray" />
+            <TextView
+                android:id="@+id/maintab_activity_head_middle"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="邀请达人"
+                android:textColor="#383838"
+                android:layout_centerInParent="true"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <com.ddfun.customerview.AutoAdjustHeightImageView_full_width
+            android:src="@mipmap/invite_apply_master_top_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@mipmap/invite_apply_icon_interests"
+                android:layout_marginRight="6dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <TextView
+                android:text="权益说明"
+                android:textColor="#555555"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:text="1,可获得更丰厚的邀请奖励\n2,可享受专属的邀请活动"
+            android:textSize="12dp"
+            android:textColor="#888888"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginLeft="36dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@mipmap/invite_apply_icon_unlock_icon"
+                android:layout_marginRight="6dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp" />
+            <TextView
+                android:text="解锁条件"
+                android:textColor="#555555"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:text="每日成功邀请超过50人以上,即可在线申请开通VIP"
+            android:textSize="12dp"
+            android:textColor="#888888"
+            android:layout_marginTop="12dp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginLeft="36dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn"
+            android:text="在线申请"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:background="@drawable/public_invite_btn"
+            android:layout_width="270dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</ScrollView>

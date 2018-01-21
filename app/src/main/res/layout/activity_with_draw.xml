@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f2f2f2"
+    android:scrollbars="none"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <LinearLayout
+            android:id="@+id/layout_show"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <RelativeLayout
+                android:id="@+id/maintab_activity_head_lay"
+                android:fitsSystemWindows="true"
+                android:layout_width="fill_parent"
+                android:background="@color/public_orange"
+                android:paddingRight="12dp"
+                android:layout_height="47.5dp" >
+                <ImageView
+                    android:id="@+id/maintab_activity_head_left_btn"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:visibility="gone"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:src="@mipmap/public_return" />
+                <TextView
+                    android:id="@+id/maintab_activity_head_middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="提现方式"
+                    android:textColor="#ffffff"
+                    android:layout_centerInParent="true"
+                    android:textSize="18dp" />
+                <LinearLayout
+                    android:id="@+id/btn_head_layout_right"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:src="@mipmap/withdraw_home_recode_icon"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp" />
+                    <TextView
+                        android:text="提现记录"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:background="@mipmap/withdraw_home_top_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="205dp">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="￥"
+                        android:textSize="18dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_balance"
+                        android:text="00.00"
+                        android:textSize="42dp"
+                        android:layout_marginLeft="6dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView
+                    android:text="我的余额"
+                    android:textSize="13dp"
+                    android:textColor="#ffffff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="兑现金额需大于10元,每天可兑现一次"
+                    android:textSize="13dp"
+                    android:textColor="#c87e00"
+                    android:layout_marginTop="55dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn_wx_withdraw"
+                android:background="@drawable/activity_withdraw_wx_bg"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/withdraw_wechat_icon"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="提现到微信钱包 >"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="实时到帐    无手续费    不限库存"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn_alipay_withdraw"
+                android:background="@drawable/activity_withdraw_alipay_bg"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="35dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@mipmap/withdraw_alipay_icon"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="提现到支付宝 >"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="2-3个工作日到账"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="    剩余库存:  "
+                            android:textColor="#fff114"
+                            android:textSize="12dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/tv_withdraw_alipay_remain"
+                            android:text="0"
+                            android:textColor="#fff114"
+                            android:textSize="12dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_unavailable_hint"
+            android:text="暂未开放"
+            android:gravity="center"
+            android:layout_marginTop="200dp"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

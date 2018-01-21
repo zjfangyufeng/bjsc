@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_title"
+        android:text="冲级1.2金币奖励排行"
+        android:layout_marginTop="20dp"
+        android:textSize="14dp"
+        android:textColor="#555555"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/game_cpl_ranking_over_top"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+            <TextView
+                android:id="@+id/tv_rank_number"
+                android:text="排行"
+                android:textColor="#888888"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/tv_rank_account"
+                    android:text="游戏账号"
+                    android:textColor="#888888"
+                    android:textSize="12dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_achieve_time"
+                android:text="领取时间"
+                android:textColor="#888888"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

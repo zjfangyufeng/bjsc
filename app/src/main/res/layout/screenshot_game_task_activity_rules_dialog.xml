@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="310dp"
+    android:background="@null"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@null"
+        android:gravity="right"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/exit"
+            android:clickable="true"
+            android:src="@mipmap/public_pop_account_close_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/public_pop_card_bg_w"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/public_orange"
+            android:text="游戏试玩规则"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <View
+            android:background="@mipmap/public_line_side"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_marginRight="7dp"
+                android:background="@color/public_orange"
+                android:layout_width="2dp"
+                android:layout_height="13dp" />
+            <TextView
+                android:text="实时返现任务"
+                android:textSize="13dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/public_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="7dp"
+                android:src="@mipmap/public_spot_normal_gray_s"
+                android:scaleType="center"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+            <TextView
+                android:text="任务只需按要求试玩,达到任务要求,奖励即自动入账。"
+                android:textSize="12dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_marginRight="7dp"
+                android:background="@color/public_orange"
+                android:layout_width="2dp"
+                android:layout_height="13dp" />
+            <TextView
+                android:text="极速审核任务"
+                android:textSize="13dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/public_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="7dp"
+                android:src="@mipmap/public_spot_normal_gray_s"
+                android:scaleType="center"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+            <TextView
+                android:text="在规定时间内,下载安装并按要求试玩;"
+                android:textSize="12dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="7dp"
+                android:src="@mipmap/public_spot_normal_gray_s"
+                android:scaleType="center"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+            <TextView
+                android:text="按要求上传试玩截图后2小时内审核;"
+                android:textSize="12dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="7dp"
+                android:src="@mipmap/public_spot_normal_gray_s"
+                android:scaleType="center"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+            <TextView
+                android:text="第一天任务审核成功后解锁后续所有任务.若失败,则该任务失败。"
+                android:textSize="12dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_marginRight="7dp"
+                android:background="@color/public_orange"
+                android:layout_width="2dp"
+                android:layout_height="13dp" />
+            <TextView
+                android:text="普通任务"
+                android:textSize="13dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/public_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="7dp"
+                android:src="@mipmap/public_spot_normal_gray_s"
+                android:scaleType="center"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+            <TextView
+                android:text="在规定时间内,下载安装并按要求试玩;"
+                android:textSize="12dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginRight="7dp"
+                android:src="@mipmap/public_spot_normal_gray_s"
+                android:scaleType="center"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+            <TextView
+                android:text="按要求上传试玩截图,1-7个工作日内审核发放奖励。"
+                android:textSize="12dp"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#666666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="@drawable/investment_tips_dialog_bottom_bg"
+        android:layout_width="match_parent"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/public_invest_remind_ico_iv"
+            android:src="@mipmap/public_invest_remind_ico"
+            android:layout_alignTop="@+id/tv_bottom"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_toRightOf="@+id/public_invest_remind_ico_iv"
+            android:textColor="@color/public_orange"
+            android:textSize="12dp"
+            android:lineSpacingExtra="4dp"
+            android:text="请勿中途卸载APP,卸载将导致任务中断失败"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

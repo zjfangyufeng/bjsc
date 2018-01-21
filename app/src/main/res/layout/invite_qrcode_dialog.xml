@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="305dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="邀\n请\n码"
+            android:textColor="#383838"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/invite_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="12345678"
+            android:textColor="#383838"
+            android:textSize="45dp" />
+
+        <TextView
+            android:id="@+id/copy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:paddingBottom="11.5dp"
+            android:text="复制"
+            android:textColor="#5692ef"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/invite_pop_card_radian" />
+
+    <LinearLayout
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/user_personal_qrcode_iv"
+            android:scaleType="fitXY"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:paddingLeft="10dp"
+            android:text="扫一扫，邀请好友一起赚钱！"
+            android:textColor="#666666"
+            android:textSize="18dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f4f4f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/maintab_activity_head_lay"
+        android:layout_width="fill_parent"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="20dp"
+        android:layout_height="47.5dp" >
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@mipmap/public_return" />
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:text="翻牌记录"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/loading_progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true" />
+    <include layout="@layout/net_error_layout" />
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_below="@+id/maintab_activity_head_lay"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="85dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/user_task_goon"/>
+        <TextView
+            android:textSize="15dp"
+            android:textColor="#999999"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="暂无记录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/success_lay"
+        android:layout_below="@+id/maintab_activity_head_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@color/public_orange"
+            android:layout_below="@id/maintab_activity_head_lay"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="85dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_times"
+                        android:text="0"
+                        android:textSize="22dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="共翻牌(次)"
+                        android:textSize="12dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/pure_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View
+                    android:background="@mipmap/public_line_side"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"></View>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_income"
+                        android:text="0.00"
+                        android:textSize="22dp"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="总计收益(元)"
+                        android:textSize="12dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/pure_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:src="@mipmap/screen_card_info_flop_top_bg"
+                android:scaleType="centerCrop"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_marginTop="@dimen/activity_view_line_space"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <com.ddfun.pulltorefresh.MyPullToRefreshView
+            android:id="@+id/mPullListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </com.ddfun.pulltorefresh.MyPullToRefreshView>
+    </LinearLayout>
+</RelativeLayout>
+
+
+

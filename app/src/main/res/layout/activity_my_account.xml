@@ -1,0 +1,325 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:scrollbars="none">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#f4f4f4">
+        <RelativeLayout
+            android:id="@+id/maintab_activity_head_lay"
+            android:layout_width="fill_parent"
+            android:background="@color/public_orange"
+            android:paddingLeft="8dp"
+            android:paddingRight="20dp"
+            android:layout_height="47.5dp" >
+
+            <ImageView
+                android:id="@+id/maintab_activity_head_left_btn"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@mipmap/public_return" />
+            <TextView
+                android:id="@+id/maintab_activity_head_middle"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="我的账号"
+                android:textColor="#ffffff"
+                android:layout_centerInParent="true"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="@dimen/activity_view_line_space"
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/bind_phone_lay"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="22.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="绑定手机号"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/bind_phone_tv"
+                android:text="225"
+                android:textSize="15dp"
+                android:textColor="#999999"
+                android:layout_marginRight="30dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+
+        <View
+            android:layout_marginTop="@dimen/activity_view_line_space"
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/sex_lay"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="22.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="性别"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/sex_tv"
+                android:text="女"
+                android:textSize="15dp"
+                android:textColor="#999999"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/public_unfold"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/birthday_lay"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="22.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="出生年份"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/birthday_tv"
+                android:text="1991"
+                android:textSize="15dp"
+                android:textColor="#999999"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/public_unfold"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+
+        <View
+            android:layout_marginTop="@dimen/activity_view_line_space"
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/zhifubao_account_lay"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:visibility="gone"
+            android:paddingRight="15dp"
+            android:paddingLeft="22.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="支付宝账号"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/layout_have_not_bind_alipay"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="60dp"
+                android:layout_height="20dp" >
+                <TextView
+                    android:text="立即绑定"
+                    android:textColor="@color/public_orange"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></View>
+                <View
+                    android:background="@mipmap/user_mine_remind_icon"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"></View>
+            </LinearLayout>
+            <ImageView
+                android:src="@mipmap/public_unfold"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/layout_wx_account"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="22.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="微信账号"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/layout_have_not_bind_wx"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="60dp"
+                android:layout_height="20dp" >
+                <TextView
+                    android:text="立即绑定"
+                    android:textColor="@color/public_orange"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></View>
+                <View
+                    android:background="@mipmap/user_mine_remind_icon"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"></View>
+            </LinearLayout>
+            <ImageView
+                android:src="@mipmap/public_unfold"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/layout_withdraw_password"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="22.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tv_withdraw_password"
+                android:text="提现密码"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_have_not_set_withdraw_password"
+                android:text="未设置"
+                android:textColor="@color/public_orange"
+                android:background="@drawable/bg_round_feebcc"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_width="60dp"
+                android:layout_height="20dp" />
+            <ImageView
+                android:src="@mipmap/public_unfold"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:id="@+id/change_password_lay"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="22.5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:text="修改登录密码"
+                android:gravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#666666"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:src="@mipmap/public_unfold"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+    </LinearLayout>
+</ScrollView>

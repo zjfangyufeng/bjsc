@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#666666"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@drawable/public_button_white"
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="13dp"
+                android:textColor="#888888"
+                android:layout_marginBottom="10dp"
+                android:text="为保证您的申诉能更及时的通过审核,请按以下要求发送截图凭证："
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="13dp"
+                android:textColor="#888888"
+                android:layout_marginTop="15dp"
+                android:text="1,在理财APP中显示绑定手机号的界面"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="13dp"
+                android:textColor="#888888"
+                android:layout_marginTop="15dp"
+                android:text="2,在理财APP中的个人实名制界面"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="13dp"
+                android:textColor="@color/public_orange"
+                android:layout_marginTop="4dp"
+                android:text="   (显示完整姓名)"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="13dp"
+                android:textColor="#888888"
+                android:layout_marginTop="15dp"
+                android:text="3,在理财APP中购买理财产品的订单界面"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="13dp"
+                android:textColor="@color/public_orange"
+                android:layout_marginTop="4dp"
+                android:text="   (需显示订单编号)"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="13dp"
+                android:textColor="#888888"
+                android:layout_marginTop="15dp"
+                android:text="4,在理财APP中购买理财产品的详细界面"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:textSize="13dp"
+                android:textColor="@color/public_orange"
+                android:layout_marginTop="4dp"
+                android:text="   (需显示投资金额,投资时间)"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <TextView
+            android:id="@+id/confirm_btn"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="知道了"
+            android:textColor="@color/public_orange"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+</LinearLayout>

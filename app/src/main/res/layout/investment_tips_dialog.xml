@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="310dp"
+    android:background="@null"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@null"
+        android:gravity="right"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/exit"
+            android:clickable="true"
+            android:src="@mipmap/public_pop_account_close_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/investment_tips_dialog_top_bg"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="#ffffff"
+            android:text="理财须知"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <View
+            android:background="@drawable/public_invest_remind_line"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px"></View>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/ff"
+                android:textSize="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:textColor="#ffffff"
+                android:lineSpacingExtra="4dp"
+                android:text="按要求体验理财应用不仅可获得广告主官方奖励,还可获得豆豆趣玩奖励。"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="赢取豆豆现金奖励方式:"
+            android:textSize="12dp"
+            android:textColor="#666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.ddfun.customerview.InvestmentTipsTV
+            android:id="@+id/tv1"
+            android:layout_marginTop="20dp"
+            android:text="按要求完成理财应用,提交您首次注册认证理财手机号,2个工作日审核并发放奖励"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.ddfun.customerview.InvestmentTipsTV
+            android:id="@+id/tv2"
+            android:layout_marginTop="20dp"
+            android:text="按要求体验理财应用,提交审核,若体验合格将自动发放豆豆趣玩奖励"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="@drawable/investment_tips_dialog_bottom_bg"
+        android:layout_width="match_parent"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="15dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/public_invest_remind_ico_iv"
+            android:src="@mipmap/public_invest_remind_ico"
+            android:layout_alignTop="@+id/tv_bottom"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_bottom"
+            android:layout_toRightOf="@+id/public_invest_remind_ico_iv"
+            android:textColor="@color/public_orange"
+            android:textSize="12dp"
+            android:lineSpacingExtra="4dp"
+            android:text="所有理财任务都需要首次注册认证体验,未按要求体验将无法获得奖励。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/public_invest_remind_ico_iv"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_bottom"
+            android:textColor="@color/public_orange"
+            android:textSize="12dp"
+            android:lineSpacingExtra="4dp"
+            android:text="若任务审核失败,可自主上传截图申诉,有效期为5天,过期视为自动放弃申诉。"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

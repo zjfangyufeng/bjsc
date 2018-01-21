@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <ImageView
+        android:id="@+id/icon_iv"
+        android:layout_marginRight="12dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title"
+            android:text="+0.20元"
+            android:textColor="@color/public_orange"
+            android:textSize="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_sub_title"
+            android:text="完成1个答题任务（0/1）"
+            android:textColor="#555555"
+            android:textSize="13dp"
+            android:maxLines="1"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btn_status"
+        android:text="去完成"
+        android:textSize="12dp"
+        android:gravity="center"
+        android:layout_width="60dp"
+        android:layout_height="25dp" />
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="24dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:id="@+id/quota_tv"
+            android:textColor="#ababab"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="12dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+        <TextView
+            android:id="@+id/expired_time_tv"
+            android:textColor="#ababab"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:textSize="12dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/con_bar_lay"
+        android:layout_marginTop="11dp"
+        android:layout_height="20dp"
+        android:layout_width="match_parent">
+
+        <View
+            android:background="@drawable/user_task_info_con_bar"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_width="280dp"
+            android:layout_height="6dp" />
+
+        <LinearLayout
+            android:id="@+id/user_task_info_con_bar_container"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_width="287dp"
+            android:layout_height="15dp" >
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="22dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_centerHorizontal="true"
+            android:includeFontPadding="false"
+            android:textSize="14dp"
+            android:textColor="#999999"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp" />
+
+        <TextView
+            android:id="@+id/reward_tv"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/title_tv"
+            android:textSize="32.5dp"
+            android:gravity="center"
+            android:textColor="#fc6e51"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/operation_request_tv"
+            android:layout_marginRight="30dp"
+            android:layout_below="@+id/reward_tv"
+            android:layout_marginTop="9dp"
+            android:textSize="13dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="试玩要求："
+            android:textColor="#888888"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

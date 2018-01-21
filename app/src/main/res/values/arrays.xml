@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="taskmanage_activity_radiogbutton_text">
+        <item>任务列表</item>
+        <item>签到任务</item>
+        <item>历史任务</item>
+    </string-array>
+    <string-array name="rank_activity_radiogbutton_text">
+        <item>周榜</item>
+        <item>月榜</item>
+        <item>总榜</item>
+    </string-array>
+    <string-array name="exchangemanage_activity_radiogbutton_text">
+        <item>全部订单</item>
+        <item>兑换成功订单</item>
+    </string-array>
+    <string-array name="task_progress_activity_radio_button_text">
+        <item>任务状态</item>
+        <item>任务进度</item>
+    </string-array>
+    <string-array name="screenshot_task_activity_radiogbutton_text">
+        <item>任务列表</item>
+        <item>我的任务</item>
+    </string-array>
+    <string-array name="screenshot_game_task_activity_radiogbutton_text">
+        <item>任务列表</item>
+        <item>我的任务</item>
+    </string-array>
+    <string-array name="investment_task_activity_radiogbutton_text">
+        <item>理财列表</item>
+        <item>我的理财</item>
+    </string-array>
+</resources>

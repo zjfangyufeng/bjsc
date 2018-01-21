@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/public_invite_gray_noclick"></item>
+    <item android:drawable="@drawable/public_invite_orange_empty_1px"></item>
+</selector>

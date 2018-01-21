@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/finish_novice1_btn"
+        android:text="结束教程>>"
+        android:background="@drawable/public_pop_button_black"
+        android:textSize="12dp"
+        android:textColor="#777777"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="85dp"
+        android:layout_height="25dp" />
+    <ImageView
+        android:background="@mipmap/guide_right_text"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="145dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+    <com.ddfun.customerview.LockScreenSlideView
+        android:id="@+id/novice_step1_lockScreenSlideView"
+        android:background="@drawable/lock_middle_selector"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="41dp"
+        android:layout_width="67.5dp"
+        android:layout_height="67.5dp">
+
+    </com.ddfun.customerview.LockScreenSlideView>
+    <ImageView
+        android:id="@+id/right_arrow_view"
+        android:layout_toRightOf="@+id/novice_step1_lockScreenSlideView"
+        android:layout_alignTop="@+id/novice_step1_lockScreenSlideView"
+        android:src="@drawable/right_arrow"
+        android:layout_width="59dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="24.75dp"
+        android:layout_height="19dp"></ImageView>
+    <View
+        android:id="@+id/novice_unlock_view"
+        android:background="@mipmap/lock_right_normal"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/novice_step1_lockScreenSlideView"
+        android:layout_marginTop="8.75dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"></View>
+
+    <TextView
+        android:text="￥0.05"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/novice_unlock_view"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp" />
+    <View
+        android:id="@+id/guide_pub_hand"
+        android:alpha="0"
+        android:background="@mipmap/guide_pub_hand"
+        android:layout_width="57dp"
+        android:layout_height="48dp" />
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="310dp"
+    android:background="@null"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@null"
+        android:gravity="right"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/exit"
+            android:clickable="true"
+            android:src="@mipmap/pop_account_close"
+            android:layout_width="44dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/public_login_part_bg"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/user_task_pop_img"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:paddingTop="20dp"
+            android:gravity="center"
+            android:id="@+id/hint"
+            android:textColor="#666666"
+            android:textSize="15dp"
+            android:text="要去锁屏界面完成新手任务哦!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/i_know_tv"
+            android:layout_width="270dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="先看看新手教程吧 >"
+            android:background="@drawable/public_button_orange"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>

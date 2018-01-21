@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/net_err_lay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone"
+    android:gravity="center" >
+    <ImageView
+        android:id="@+id/net_err_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/public_internet_off" />
+    <TextView
+        android:id="@+id/net_err_text"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/net_err_img"
+        android:layout_marginTop="23dp"
+        android:text="与母星暂时失去了联系"
+        android:textColor="#999999" />
+    <TextView
+        android:id="@+id/tv1"
+        android:textSize="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/net_err_text"
+        android:layout_marginTop="18dp"
+        android:text="可能的原因："
+        android:textColor="#ababab" />
+    <TextView
+        android:id="@+id/tv2"
+        android:textSize="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:lineSpacingExtra="8dp"
+        android:layout_marginTop="10dp"
+        android:text="1，与网络君对接请求失败\n2，内容被不明生物偷走了"
+        android:textColor="#ababab" />
+    <Button
+        android:id="@+id/fail_btn"
+        android:layout_width="185dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        android:layout_below="@id/tv2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/public_button_orange"
+        android:gravity="center"
+        android:text="戳我重试"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+</RelativeLayout>

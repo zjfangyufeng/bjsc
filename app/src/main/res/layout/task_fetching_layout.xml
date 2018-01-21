@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/task_fetching_lay"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/loading_bg"
+        android:layout_width="115dp"
+        android:layout_height="95dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.ff.common.custom_view.GifView
+                android:id="@+id/loading_gif_view"
+                android:visibility="visible"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                custom:gif="@mipmap/loading" />
+
+            <TextView
+                android:text="正在抢任务..."
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

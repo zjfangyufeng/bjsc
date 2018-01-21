@@ -1,0 +1,66 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/maintab_activity_head_lay"
+            android:layout_width="fill_parent"
+            android:background="@color/pure_white"
+            android:paddingLeft="8dp"
+            android:paddingRight="20dp"
+            android:layout_height="47.5dp" >
+            <ImageView
+                android:id="@+id/maintab_activity_head_left_btn"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:src="@mipmap/public_return_gray" />
+            <TextView
+                android:id="@+id/maintab_activity_head_middle"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="邀请达人"
+                android:textColor="#383838"
+                android:layout_centerInParent="true"
+                android:textSize="18dp" />
+        </RelativeLayout>
+        <ImageView
+            android:src="@mipmap/invite_master_top_bg"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="恭喜您,已成为邀请达人"
+            android:textColor="#555555"
+            android:textSize="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="已享受专属邀请奖励,不同等级有不同邀请奖励\n梯度,详情咨询客服哦~"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:layout_marginTop="14dp"
+            android:lineSpacingExtra="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn"
+            android:text="联系专属客服"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:background="@drawable/public_invite_btn"
+            android:layout_width="230dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</ScrollView>

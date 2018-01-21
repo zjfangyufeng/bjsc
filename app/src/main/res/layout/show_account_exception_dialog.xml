@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@null"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@null"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/exit"
+            android:clickable="true"
+            android:src="@mipmap/pop_account_close"
+            android:layout_width="44dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/pop_account_abnormal"
+            android:layout_width="290dp"
+            android:layout_height="127.5dp" />
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingTop="20dp"
+            android:lineSpacingMultiplier="1.2"
+            android:id="@+id/hint"
+            android:textColor="#666666"
+            android:textSize="14dp"
+            android:text="系统检测到您的帐号存在异常，为保证您的账户安全，现已对其锁定。请耐心等待工作人员的二次排查。\n\n您也可以填写申诉信息，工作人员将在2个工作日内回复。"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+
+        <Button
+            android:id="@+id/i_know_tv"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="立即申诉"
+            android:background="@drawable/public_button_orange"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+</LinearLayout>

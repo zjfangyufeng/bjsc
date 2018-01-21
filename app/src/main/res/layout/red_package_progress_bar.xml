@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="42dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@drawable/task_progress_bar_bg_gray"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"></View>
+        <View
+            android:id="@+id/view_bg_yellow"
+            android:background="@drawable/task_progress_bar_bg_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"></View>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/red_package_progress_bar_item"></include>
+    </LinearLayout>
+</RelativeLayout>

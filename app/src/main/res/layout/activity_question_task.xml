@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f4f4f4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/loading_progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true" />
+
+    <include layout="@layout/net_error_layout" />
+
+    <ScrollView
+        android:id="@+id/success_lay"
+        android:visibility="visible"
+        android:background="@color/public_orange"
+        android:layout_above="@+id/bottom_lay"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="#f4f4f4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/head_lay"
+                android:orientation="vertical"
+                android:background="@color/public_orange"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:paddingRight="7dp"
+                    android:layout_height="47.5dp" >
+
+                    <ImageView
+                        android:id="@+id/maintab_activity_head_left_btn"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:clickable="true"
+                        android:src="@mipmap/public_close" />
+
+                    <TextView
+                        android:id="@+id/maintab_activity_head_middle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:text="答题奖励"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:id="@+id/answer_rule_lay"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="44dp"
+                            android:src="@mipmap/draw_answer_rule" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="奖励规则"
+                            android:textColor="#ffffff"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/reward_money_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/public_orange"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/public_orange"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="13dp"
+                    android:text="答对问题可以获得现金奖励"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="32.5dp"
+                    android:background="@color/public_orange">
+                </View>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/draw_answer_top_bg">
+                </View>
+
+                <com.ddfun.customerview.RoundCornerImageViewFixXY
+                    android:id="@+id/app_logo_iv"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="-32dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="62.5dp"
+                    android:layout_height="62.5dp" />
+
+                <TextView
+                    android:id="@+id/app_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textColor="#666666"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/app_title_tv"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#999999"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/remain_times_tv"
+                        android:textColor="#999999"
+                        android:layout_gravity="right"
+                        android:text="答题机会（"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:id="@+id/remain_times_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/sum_times_tv"
+                        android:layout_gravity="right"
+                        android:textColor="#f9a61a"
+                        android:textSize="12dp"/>
+
+                    <TextView
+                        android:id="@+id/sum_times_tv"
+                        android:layout_marginRight="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#999999"
+                        android:text="/3）"
+                        android:textSize="12dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hint"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="7dp"
+                android:gravity="center_vertical"
+                android:textSize="12dp"
+                android:background="#fffedf"
+                android:textColor="#fc6e51"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e9e9ea">
+            </View>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/question_lay">
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_lay"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@mipmap/public_line_middle"
+            android:layout_width="match_parent"
+            android:layout_height="2px"></View>
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <RelativeLayout
+                android:id="@+id/download_layout"
+                android:background="@drawable/download_layout_bg_drawable"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="match_parent" >
+
+                <ProgressBar
+                    android:id="@+id/download_progress"
+                    android:visibility="visible"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/probar_download_style" />
+
+                <TextView
+                    android:id="@+id/download_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="下载"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/submit_btn"
+                android:background="@drawable/public_button_gray"
+                android:text="提交答案"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.ddfun.customerview.PartTransparentLayout
+        android:id="@+id/layout_part_transparent"
+        android:background="#00000000"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.ddfun.customerview.PartTransparentLayout>
+</RelativeLayout>

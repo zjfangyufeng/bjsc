@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:fitsSystemWindows="true"
+    android:background="@color/public_orange"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="-15dp"
+            android:layout_above="@+id/maintab_activity_foot_lay" >
+        </FrameLayout>
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+        <RelativeLayout
+            android:id="@+id/maintab_activity_foot_lay"
+            android:layout_width="fill_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true" >
+            <View
+                android:background="@drawable/public_menu_bg"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="match_parent" >
+                <LinearLayout
+                    android:id="@+id/layout_discover"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1" >
+                    <View
+                        android:background="@drawable/maintab_activity_foot_radiogbutton1_selector"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:text="发现"
+                        android:textSize="10dp"
+                        android:textColor="@drawable/maintab_activity_foot_radiogbutton_text_selector"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout_invite"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1" >
+                    <View
+                        android:background="@drawable/maintab_activity_foot_radiogbutton3_selector"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:text="邀请"
+                        android:textSize="10dp"
+                        android:textColor="@drawable/maintab_activity_foot_radiogbutton_text_selector"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/btn_home"
+                    android:src="@mipmap/public_fun"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:id="@+id/layout_transfer_out"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1" >
+                    <View
+                        android:background="@drawable/maintab_activity_foot_radiogbutton2_selector"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:id="@+id/tv_transfer_out"
+                        android:textSize="10dp"
+                        android:textColor="@drawable/maintab_activity_foot_radiogbutton_text_selector"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/layout_more"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1" >
+                    <View
+                        android:id="@+id/iv_top"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/maintab_activity_foot_radiogbutton4_selector"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:layout_below="@+id/iv_top"
+                        android:text="更多"
+                        android:textSize="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@drawable/maintab_activity_foot_radiogbutton_text_selector"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:id="@+id/msg_indicator"
+                        android:src="@mipmap/public_user_more"
+                        android:visibility="invisible"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</TabHost>
