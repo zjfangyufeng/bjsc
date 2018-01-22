@@ -167,7 +167,7 @@
                         android:layout_height="wrap_content"
                         android:layout_toLeftOf="@+id/sum_times_tv"
                         android:layout_gravity="right"
-                        android:textColor="#f9a61a"
+                        android:textColor="#BA142B"
                         android:textSize="12dp"/>
 
                     <TextView

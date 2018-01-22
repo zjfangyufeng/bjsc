@@ -27,14 +27,14 @@
         <TextView
             android:id="@+id/title_tv"
             android:text="第一天答题"
-            android:textColor="#f9a61a"
+            android:textColor="#BA142B"
             android:textSize="12dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/reward_tv"
             android:text="+0.00"
-            android:textColor="#f9a61a"
+            android:textColor="#BA142B"
             android:textSize="12dp"
             android:layout_marginLeft="8dp"
             android:layout_weight="1"
@@ -43,7 +43,7 @@
         <TextView
             android:id="@+id/guide_tv"
             android:text="已完成"
-            android:textColor="#f9a61a"
+            android:textColor="#BA142B"
             android:textSize="12dp"
             android:layout_marginRight="15dp"
             android:layout_width="wrap_content"

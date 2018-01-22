@@ -41,7 +41,7 @@ public class MyNotificationManager {
         Intent navigationIntent = ReflectNavigation.getNavigationIntent(ApplicationProxy.getInstance().getContext(), "com.ddfun.activity.Welcome");
         PendingIntent pendingIntent = PendingIntent.getActivity(ApplicationProxy.getInstance().getContext(), 1,
                 navigationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        sendNotificationWithTicker("豆豆趣玩",ticker,pendingIntent);
+        sendNotificationWithTicker("北京赛车",ticker,pendingIntent);
     }
 
     public static void sendNotificationWithTicker(String title,String ticker,PendingIntent pendingIntent){

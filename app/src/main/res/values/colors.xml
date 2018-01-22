@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="hint_color">#c0c0c0</color>
-    <color name="public_orange">#f9a61a</color>
+    <color name="public_orange">#BA142B</color>
     <color name="public_gray">#ababab</color>
     <color name="public_green">#2bc6b6</color>
     <color name="register_year_girl_color">#fb6f51</color>
@@ -15,6 +15,6 @@
     <color name="question_no_title_color">#52cec1</color>
     <color name="question_answer_color">#555555</color>
     <color name="question_option_color">#666666</color>
-    <color name="question_answer_color_pressed">#f9a61a</color>
+    <color name="question_answer_color_pressed">#BA142B</color>
     <color name="question_option_color_pressed">#ffffff</color>
 </resources>

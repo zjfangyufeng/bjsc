@@ -42,7 +42,7 @@
                     android:layout_centerHorizontal="true"
                     android:textSize="18dp"
                     android:layout_marginTop="4dp"
-                    android:textColor="#f9a61a"
+                    android:textColor="#BA142B"
                     android:text="百度新闻"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -104,7 +104,7 @@
                         android:id="@+id/stage1_title"
                         android:text="第1天答题"
                         android:textSize="13dp"
-                        android:textColor="#f9a61a"
+                        android:textColor="#BA142B"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -134,7 +134,7 @@
                         android:text="第2天答题"
                         android:id="@+id/stage2_title"
                         android:textSize="13dp"
-                        android:textColor="#f9a61a"
+                        android:textColor="#BA142B"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -164,7 +164,7 @@
                         android:text="第3到6天试玩3分钟"
                         android:textSize="13dp"
                         android:id="@+id/stage3_title"
-                        android:textColor="#f9a61a"
+                        android:textColor="#BA142B"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -194,7 +194,7 @@
                         android:text="第7天试玩3分钟"
                         android:textSize="13dp"
                         android:id="@+id/stage4_title"
-                        android:textColor="#f9a61a"
+                        android:textColor="#BA142B"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 

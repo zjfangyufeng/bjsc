@@ -33,7 +33,7 @@
             android:layout_weight="1"
             android:layout_height="fill_parent"
             android:gravity="center_vertical"
-            android:text="豆豆趣玩"
+            android:text="北京赛车"
             android:textColor="#ffffff"
             android:textSize="18dp" />
     </LinearLayout>

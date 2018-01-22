@@ -44,7 +44,7 @@
         android:layout_marginTop="35dp" >
     </TextView>
     <TextView
-        android:text="(了解你更多,豆豆趣玩会更适合你!~)"
+        android:text="(了解你更多,北京赛车会更适合你!~)"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"

@@ -22,7 +22,7 @@
         android:textColor="#ffffff"
         android:textSize="15dp"
         android:alpha="0.7"
-        android:text="右划显示的解锁收益,会自动添加到豆豆趣玩账户"
+        android:text="右划显示的解锁收益,会自动添加到北京赛车账户"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <Button

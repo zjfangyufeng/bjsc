@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content" />
             </LinearLayout>
             <TextView
-                android:text="您已领取豆豆趣玩的红包"
+                android:text="您已领取北京赛车的红包"
                 android:gravity="center_horizontal"
                 android:textSize="18dp"
                 android:background="#ffffff"
@@ -92,7 +92,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <TextView
-                android:text="已存入您的豆豆趣玩账户 可随时提现"
+                android:text="已存入您的北京赛车账户 可随时提现"
                 android:textSize="12dp"
                 android:background="#ffffff"
                 android:gravity="center"

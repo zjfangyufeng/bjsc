@@ -97,6 +97,24 @@ public class MyHttpClient {
 		return null;
 	}
 
+	public static JSONObject executeGet(String url){
+		String result;
+		try {
+			OkHttpClient client = getOkHttpClient();
+			Request request = new Request.Builder()
+					.url(url).get().build();
+			Response response = client.newCall(request).execute();
+			result = response.body().string();
+			if (result != null) {
+				JSONObject jsonObject = new JSONObject(result);
+				return jsonObject;
+			}
+		} catch (Exception e) {
+//			if(!BuildConfig.isRelease)
+		}
+		return null;
+	}
+
 	public static JSONObject executePostFile(String url,Map<String,String> param,Map<String,String> list){
 		String result;
 		OkHttpClient client = getOkHttpClient();

@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BJSC.iml" filepath="$PROJECT_DIR$/BJSC.iml" />
+      <module fileurl="file://D:\android_projects\bjsc\BJSC.iml" filepath="D:\android_projects\bjsc\BJSC.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\android_projects\bjsc\app\app.iml" filepath="D:\android_projects\bjsc\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bjsc.iml" filepath="$PROJECT_DIR$/bjsc.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://D:\android_projects\bjsc\common\common.iml" filepath="D:\android_projects\bjsc\common\common.iml" />
       <module fileurl="file://$PROJECT_DIR$/imgloader/imgloader.iml" filepath="$PROJECT_DIR$/imgloader/imgloader.iml" />
+      <module fileurl="file://D:\android_projects\bjsc\imgloader\imgloader.iml" filepath="D:\android_projects\bjsc\imgloader\imgloader.iml" />
       <module fileurl="file://$PROJECT_DIR$/qrcode/qrcode.iml" filepath="$PROJECT_DIR$/qrcode/qrcode.iml" />
+      <module fileurl="file://D:\android_projects\bjsc\qrcode\qrcode.iml" filepath="D:\android_projects\bjsc\qrcode\qrcode.iml" />
     </modules>
   </component>
 </project>

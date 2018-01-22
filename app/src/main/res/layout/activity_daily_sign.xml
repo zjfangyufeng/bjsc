@@ -172,7 +172,7 @@
                     android:layout_height="100dp" />
             </LinearLayout>
             <TextView
-                android:text="※本活动最终解释权归豆豆趣玩所有※"
+                android:text="※本活动最终解释权归北京赛车所有※"
                 android:background="#e89303"
                 android:textSize="11dp"
                 android:textColor="#feca74"

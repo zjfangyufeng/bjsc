@@ -26,6 +26,7 @@ import com.ff.common.utils.WebViewUtil;
 public class MyWebview extends BaseActivity implements OnClickListener {
     WebView mWebView;
     ProgressBar pb;
+    View head_lay;
     TextView maintab_activity_head_middle;
     ImageView maintab_activity_head_left_btn, btn_share, btn_refresh, btn_more;
     public static final String READTYPE = "readtype";
@@ -51,10 +52,19 @@ public class MyWebview extends BaseActivity implements OnClickListener {
 
     public static Intent getStartIntent(Context mContext, String title, String url,  String type, String summary) {
         Intent intent = new Intent(mContext, MyWebview.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("title", title);
         intent.putExtra("url", url);
         intent.putExtra("type", type);
         intent.putExtra("summary", summary);
+        return intent;
+    }
+
+    public static Intent getStartIntent(Context mContext, String url,  boolean hide_headLay) {
+        Intent intent = new Intent(mContext, MyWebview.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.putExtra("url", url);
+        intent.putExtra("hide_headLay", hide_headLay);
         return intent;
     }
 
@@ -69,6 +79,7 @@ public class MyWebview extends BaseActivity implements OnClickListener {
     public void initWebView() {
         view = View.inflate(this, R.layout.mywebview, null);
         setContentView(view);
+        head_lay = findViewById(R.id.head_lay);
         btn_share = (ImageView) findViewById(R.id.btn_share);
         btn_refresh = (ImageView) findViewById(R.id.btn_refresh);
         btn_more = (ImageView) findViewById(R.id.btn_more);
@@ -90,6 +101,10 @@ public class MyWebview extends BaseActivity implements OnClickListener {
         if (!ToolUtils.isNull(title)) {
             maintab_activity_head_middle.setText(title);
         }
+
+        boolean hide_headLay = getIntent().getBooleanExtra("hide_headLay",false);
+        if(hide_headLay)
+            head_lay.setVisibility(View.GONE);
 
         String type = getIntent().getExtras().getString("type");
         if (READTYPE.equals(type)) {

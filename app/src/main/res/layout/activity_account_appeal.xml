@@ -69,7 +69,7 @@
             android:textSize="15dp"
             android:textColorHint="#999999"
             android:background="#ffffff"
-            android:hint="亲爱的豆豆趣玩用户，建议您尽量详细的描述您的机型，最近在豆豆趣玩的操作等情况，以便我们更快速的解决您的问题。(字数不小于10)"
+            android:hint="亲爱的北京赛车用户，建议您尽量详细的描述您的机型，最近在北京赛车的操作等情况，以便我们更快速的解决您的问题。(字数不小于10)"
             android:scrollbars="vertical">
         </EditText>
 

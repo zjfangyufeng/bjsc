@@ -100,7 +100,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                     <TextView
-                        android:text="*可充值余额不包含注册豆豆趣玩时的'注册奖励金额'。"
+                        android:text="*可充值余额不包含注册北京赛车时的'注册奖励金额'。"
                         android:textSize="13dp"
                         android:lineSpacingExtra="5dp"
                         android:layout_marginTop="5dp"

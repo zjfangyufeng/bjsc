@@ -9,15 +9,33 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "71266cc1f2c2ea242264de43", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [ moduleName : project.getName() ]
             }
         }
     }
+    signingConfigs {
+        myConfig {
+            storeFile file("key.jks")
+            storePassword "199149"
+            keyAlias "key0"
+            keyPassword "199149"
+            v2SigningEnabled false
+        }
+    }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
+            signingConfig signingConfigs.myConfig
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -28,6 +46,10 @@ dependencies {
 
     compile project(':common')
     compile project(':imgloader')
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+
+    compile 'cn.jiguang.sdk:jpush:3.1.1'  // 此处以JPush 3.1.1 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.9'  // 此处以JCore 1.1.9 版本为例。
 
     compile 'com.jakewharton:butterknife:8.4.+'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.+'

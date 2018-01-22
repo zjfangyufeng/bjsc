@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
                 android:gravity="center"
-                android:text="关于豆豆趣玩"
+                android:text="关于北京赛车"
                 android:textColor="#ffffff"
                 android:layout_centerInParent="true"
                 android:textSize="18dp" />
@@ -234,7 +234,7 @@
                 android:layout_width="18dp"
                 android:layout_height="18dp" />
             <TextView
-                android:text="豆豆趣玩官网"
+                android:text="北京赛车官网"
                 android:gravity="center_vertical"
                 android:layout_width="0dp"
                 android:layout_weight="1"

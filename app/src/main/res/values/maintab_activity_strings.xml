@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="maintab_activity_head_title_string">豆豆趣玩</string>
-    <string name="maintab_activity_foot_radiogbutton1_string">发现</string>
-    <string name="maintab_activity_foot_radiogbutton2_string">邀请</string>
-    <string name="maintab_activity_foot_radiogbutton3_string">首页</string>
-    <string name="maintab_activity_foot_radiogbutton4_string">提现</string>
-    <string name="maintab_activity_foot_radiogbutton5_string">更多</string>
+    <string name="maintab_activity_head_title_string">北京赛车</string>
+    <string name="maintab_activity_foot_radiogbutton1_string">走势图</string>
+    <string name="maintab_activity_foot_radiogbutton2_string">中奖查询</string>
+    <string name="maintab_activity_foot_radiogbutton3_string">投注查询</string>
+    <string name="maintab_activity_foot_radiogbutton4_string">模拟摇奖</string>
 
 </resources>

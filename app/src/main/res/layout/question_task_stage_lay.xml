@@ -14,7 +14,7 @@
     <TextView
         android:id="@+id/title_tv"
         android:layout_marginLeft="41.5dp"
-        android:textColor="#f9a61a"
+        android:textColor="#BA142B"
         android:textSize="12dp"
         android:layout_marginTop="17dp"
         android:layout_width="wrap_content"
@@ -23,7 +23,7 @@
     <TextView
         android:id="@+id/guide_tv"
         android:layout_marginLeft="41.5dp"
-        android:textColor="#f9a61a"
+        android:textColor="#BA142B"
         android:layout_below="@+id/title_tv"
         android:textSize="12dp"
         android:layout_width="wrap_content"
@@ -31,7 +31,7 @@
 
     <TextView
         android:id="@+id/reward_tv"
-        android:textColor="#f9a61a"
+        android:textColor="#BA142B"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:textSize="12dp"
