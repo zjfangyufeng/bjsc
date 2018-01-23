@@ -21,7 +21,7 @@
 
         <TextView
             android:gravity="left"
-            android:text="第一步.进入 【自启动管理】\n第二步.找到北京赛车,点击右侧的开关"
+            android:text="第一步.进入 【自启动管理】\n第二步.找到北京赛车pk拾,点击右侧的开关"
             android:id="@+id/msg_tv"
             android:textSize="14dp"
             android:paddingLeft="15dp"

@@ -39,7 +39,7 @@
                         android:layout_centerHorizontal="true"
                         android:textSize="20dp"
                         android:textColor="#ffffff"
-                        android:text="注册北京赛车 边玩边赚钱"
+                        android:text="注册北京赛车pk拾 边玩边赚钱"
                         android:layout_marginTop="46dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
@@ -262,7 +262,7 @@
                             android:layout_marginTop="20dp"
                             android:background="@null"
                             android:textColor="@color/hint_color"
-                            android:text="注册即表示您同意《北京赛车服务协议》"/>
+                            android:text="注册即表示您同意《北京赛车pk拾服务协议》"/>
                     </LinearLayout>
                     <ImageView
                         android:src="@mipmap/login_img_logo"

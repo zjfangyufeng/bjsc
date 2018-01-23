@@ -101,7 +101,7 @@
                 android:lineSpacingMultiplier="1.3"
                 android:minHeight="225dp"
                 android:maxLength="500"
-                android:hint="亲爱的北京赛车用户，请尽可能详细的描述您遇到的问题，方便我们工作人员尽快处理您的问题~"
+                android:hint="亲爱的北京赛车pk拾用户，请尽可能详细的描述您遇到的问题，方便我们工作人员尽快处理您的问题~"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <View
