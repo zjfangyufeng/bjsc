@@ -119,7 +119,7 @@
                     android:textColor="#999999"
                     android:lineSpacingExtra="5dp"
                     android:layout_margin="15dp"
-                    android:text="（方法二）打开微信，点击右上角【添加朋友】-选择公众号搜索“doudouquwan”（北京赛车pk拾全拼）并关注；"
+                    android:text="（方法二）打开微信，点击右上角【添加朋友】-选择公众号搜索“doudouquwan”（北京赛车PK10计划全拼）并关注；"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
                 </com.ddfun.customerview.ZeusTextView>

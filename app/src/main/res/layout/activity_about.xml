@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="fill_parent"
                 android:gravity="center"
-                android:text="关于北京赛车pk拾"
+                android:text="关于北京赛车PK10计划"
                 android:textColor="#ffffff"
                 android:layout_centerInParent="true"
                 android:textSize="18dp" />
@@ -234,7 +234,7 @@
                 android:layout_width="18dp"
                 android:layout_height="18dp" />
             <TextView
-                android:text="北京赛车pk拾官网"
+                android:text="北京赛车PK10计划官网"
                 android:gravity="center_vertical"
                 android:layout_width="0dp"
                 android:layout_weight="1"

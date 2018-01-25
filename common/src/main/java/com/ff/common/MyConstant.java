@@ -28,7 +28,7 @@ public class MyConstant {
 
 	public static final String ISCHOOSEMODE = "ISCHOOSEMODE";
 	public static final int ISCHOOSEADDRESSSUCCESS = 20151016;
-	public static final String[] words={"每天解锁就能赚零花钱啦，我已累积收入132元，快去喊朋友一起赚钱吧~","手机没话费怎么办？下载北京赛车pk拾，每个月50元话费北京赛车pk拾送！","您的好友给您发了一个红包，请注意查收，下载北京赛车pk拾即可领取~"};
+	public static final String[] words={"每天解锁就能赚零花钱啦，我已累积收入132元，快去喊朋友一起赚钱吧~","手机没话费怎么办？下载北京赛车PK10计划，每个月50元话费北京赛车PK10计划送！","您的好友给您发了一个红包，请注意查收，下载北京赛车PK10计划即可领取~"};
 	public static final String waterMarkPath="_watermark";
 	public static final String ERROR = "error";
 	public static final int PAGE_NUMBER_COUNT = 20;

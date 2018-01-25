@@ -31,7 +31,7 @@
         <TextView
             android:id="@+id/tv"
             android:alpha="0"
-            android:text="北京赛车pk拾送您1个\n随机金额红包"
+            android:text="北京赛车PK10计划送您1个\n随机金额红包"
             android:gravity="center"
             android:textColor="#ffeb51"
             android:textSize="20dp"

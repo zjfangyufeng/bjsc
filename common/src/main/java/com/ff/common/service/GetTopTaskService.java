@@ -85,7 +85,7 @@ public class GetTopTaskService extends Service {
                 long endTime = SystemClock.uptimeMillis();
                 long lastTime = endTime - startTime;
                 if (lastTime < getNeedRunTimeMillisecond()) {
-                    ImmediatelyToast.showLongMsg("【北京赛车pk拾提示您】哎呀，时间不够哦，再回去使用一会儿就能有奖励哦");
+                    ImmediatelyToast.showLongMsg("【北京赛车PK10计划提示您】哎呀，时间不够哦，再回去使用一会儿就能有奖励哦");
                 }
             }
 
@@ -185,7 +185,7 @@ public class GetTopTaskService extends Service {
         startScan();
         String operation_request = intent.getStringExtra("operation_request");
         if(ToolUtils.isNull(operation_request))
-            ImmediatelyToast.showLongMsg("【北京赛车pk拾提示您】按照提示使用足够时间才能获得奖励哦");
+            ImmediatelyToast.showLongMsg("【北京赛车PK10计划提示您】按照提示使用足够时间才能获得奖励哦");
         else
             ImmediatelyToast.showLongMsg("任务要求:"+operation_request);
         return Service.START_REDELIVER_INTENT;
