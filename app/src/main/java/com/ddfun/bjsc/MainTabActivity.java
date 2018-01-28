@@ -18,12 +18,10 @@ import com.ff.common.ImmediatelyToast;
 import com.ff.common.http.MyHttpClient;
 import com.ff.imgloader.ImageLoader;
 import com.google.gson.Gson;
-import com.google.gson.JsonSyntaxException;
 
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -33,7 +31,7 @@ import cn.jpush.android.api.JPushInterface;
 public class MainTabActivity extends TabActivity implements OnClickListener {
 
     private TabHost tabHost;
-    private String maintab_activity_foot_radiogbutton1_string,
+    private String maintab_activity_foot_radiogbutton0_string,maintab_activity_foot_radiogbutton1_string,
             maintab_activity_foot_radiogbutton2_string,
             maintab_activity_foot_radiogbutton3_string,
             maintab_activity_foot_radiogbutton4_string;
@@ -43,6 +41,8 @@ public class MainTabActivity extends TabActivity implements OnClickListener {
 
     @BindView(R.id.layout_discover)
     View layout_discover;
+    @BindView(R.id.layout_home)
+    View layout_home;
     @BindView(R.id.layout_invite)
     View layout_invite;
     @BindView(R.id.layout_transfer_out)
@@ -63,7 +63,7 @@ public class MainTabActivity extends TabActivity implements OnClickListener {
         layout_invite.setOnClickListener(this);
         layout_transfer_out.setOnClickListener(this);
         layout_more.setOnClickListener(this);
-        layout_discover.performClick();
+        layout_home.performClick();
         dealCurrentPage();
         JPushInterface.setDebugMode(true); 	// 设置开启日志,发布时请关闭日志
         JPushInterface.init(this);     		// 初始化 JPush
@@ -116,6 +116,7 @@ public class MainTabActivity extends TabActivity implements OnClickListener {
 
     private void initTabHost() {
         tabHost = getTabHost();
+        maintab_activity_foot_radiogbutton0_string = getString(R.string.maintab_activity_foot_radiogbutton0_string);
         maintab_activity_foot_radiogbutton1_string = getString(R.string.maintab_activity_foot_radiogbutton1_string);
         maintab_activity_foot_radiogbutton2_string = getString(R.string.maintab_activity_foot_radiogbutton2_string);
         maintab_activity_foot_radiogbutton3_string = getString(R.string.maintab_activity_foot_radiogbutton3_string);
@@ -143,6 +144,10 @@ public class MainTabActivity extends TabActivity implements OnClickListener {
         bankBean.url= "http://i.sdcp.cn/zst/qyh.do";
         list.add(bankBean);
         intent.putParcelableArrayListExtra("data",list);
+        tabHost.addTab(tabHost
+                .newTabSpec(maintab_activity_foot_radiogbutton0_string)
+                .setIndicator(maintab_activity_foot_radiogbutton0_string)
+                .setContent(new Intent(this,NewsActivity.class)));
         tabHost.addTab(tabHost
                 .newTabSpec(maintab_activity_foot_radiogbutton1_string)
                 .setIndicator(maintab_activity_foot_radiogbutton1_string)
@@ -205,6 +210,10 @@ public class MainTabActivity extends TabActivity implements OnClickListener {
 
     View selected;
 
+    public void choose0() {
+        tabHost.setCurrentTabByTag(maintab_activity_foot_radiogbutton0_string);
+    }
+
     public void choose1() {
         tabHost.setCurrentTabByTag(maintab_activity_foot_radiogbutton1_string);
     }
@@ -228,6 +237,11 @@ public class MainTabActivity extends TabActivity implements OnClickListener {
             selected.setSelected(false);
         }
         switch (v.getId()){
+            case R.id.layout_home:
+                selected = v;
+                v.setSelected(true);
+                choose0();
+                break;
             case R.id.layout_discover:
                 selected = v;
                 v.setSelected(true);

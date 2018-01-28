@@ -36,6 +36,27 @@
                 android:orientation="horizontal"
                 android:layout_height="match_parent" >
                 <LinearLayout
+                    android:id="@+id/layout_home"
+                    android:onClick="onClick"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="bottom"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1" >
+                    <View
+                        android:background="@mipmap/public_home_normal"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+                    <TextView
+                        android:text="首页"
+                        android:textSize="10dp"
+                        android:textColor="@drawable/maintab_activity_foot_radiogbutton_text_selector"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
                     android:id="@+id/layout_discover"
                     android:orientation="vertical"
                     android:gravity="center"
