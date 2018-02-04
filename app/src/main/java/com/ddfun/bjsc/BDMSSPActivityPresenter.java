@@ -14,7 +14,6 @@ import com.ff.common.application.ApplicationProxy;
 public class BDMSSPActivityPresenter {
     IBDMSSPActivityView iView;
     BDMSSPActivityModel iModel;
-    public static int c = 50;
 
     public BDMSSPActivityPresenter(IBDMSSPActivityView iView) {
         this.iView = iView;

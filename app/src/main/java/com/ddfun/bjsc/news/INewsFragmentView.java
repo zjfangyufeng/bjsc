@@ -3,6 +3,7 @@ package com.ddfun.bjsc.news;
 import com.ddfun.bjsc.bean.NewsBean;
 import com.ff.common.mvp_v.ILoadingView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,6 +12,7 @@ import java.util.List;
 public interface INewsFragmentView extends ILoadingView {
 
     void setData(List<NewsBean> data);
+    boolean addData(ArrayList<NewsBean> data);
 
     void showWaitingDialog();
     void dismissWaitingDialog();

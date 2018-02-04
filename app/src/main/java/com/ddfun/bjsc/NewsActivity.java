@@ -46,16 +46,26 @@ public class NewsActivity extends FragmentActivity implements View.OnClickListen
 
         NewsCategoryBean bean = new NewsCategoryBean();
         bean.position = 0;
+        bean.name = "足球";
+        bean.sortid = 2;
+        l.add(bean);
+        bean = new NewsCategoryBean();
+        bean.position = 1;
+        bean.name = "篮球";
+        bean.sortid = 3;
+        l.add(bean);
+        bean = new NewsCategoryBean();
+        bean.position = 2;
         bean.name = "双色球";
         bean.sortid = 4;
         l.add(bean);
         bean = new NewsCategoryBean();
-        bean.position = 1;
+        bean.position = 3;
         bean.name = "3D";
         bean.sortid = 6;
         l.add(bean);
         bean = new NewsCategoryBean();
-        bean.position = 2;
+        bean.position = 4;
         bean.name = "大乐透";
         bean.sortid = 5;
         l.add(bean);
@@ -98,7 +108,6 @@ public class NewsActivity extends FragmentActivity implements View.OnClickListen
     }
 
     private void resetCategoryView(NewsCategoryBean bean) {
-        Toast.makeText(this,bean.name,Toast.LENGTH_LONG).show();
         vp.setCurrentItem(bean.position);
     }
 

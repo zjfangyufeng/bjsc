@@ -32,7 +32,7 @@
         android:layout_marginLeft="30dp"
         android:textSize="14dp"
         android:textColor="#666666"
-        android:text="为保证您的资金安全，请输入北京赛车PK10计划密码"
+        android:text="为保证您的资金安全，请输入福彩3D密码"
         android:gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="70dp" />

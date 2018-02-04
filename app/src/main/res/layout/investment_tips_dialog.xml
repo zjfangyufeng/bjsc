@@ -52,7 +52,7 @@
                 android:layout_marginLeft="12dp"
                 android:textColor="#ffffff"
                 android:lineSpacingExtra="4dp"
-                android:text="按要求体验理财应用不仅可获得广告主官方奖励,还可获得北京赛车PK10计划奖励。"
+                android:text="按要求体验理财应用不仅可获得广告主官方奖励,还可获得福彩3D奖励。"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -81,7 +81,7 @@
         <com.ddfun.customerview.InvestmentTipsTV
             android:id="@+id/tv2"
             android:layout_marginTop="20dp"
-            android:text="按要求体验理财应用,提交审核,若体验合格将自动发放北京赛车PK10计划奖励"
+            android:text="按要求体验理财应用,提交审核,若体验合格将自动发放福彩3D奖励"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>

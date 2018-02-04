@@ -11,7 +11,7 @@
         <TextView
             android:id="@+id/msg_tv"
             android:gravity="center"
-            android:text="本券码/礼包码只能在通过北京赛车PK10计划下载安装的应用上使用，请先安装应用~"
+            android:text="本券码/礼包码只能在通过福彩3D下载安装的应用上使用，请先安装应用~"
             android:textSize="16dp"
             android:lineSpacingMultiplier="1.4"
             android:layout_marginTop="30dp"

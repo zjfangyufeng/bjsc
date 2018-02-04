@@ -7,6 +7,7 @@ import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.ddfun.bjsc.BuildConfig;
 import com.ff.common.application.ApplicationProxy;
 import com.ff.common.application.IApplication;
 import com.ff.common.http.MyHttpClient;
@@ -73,7 +74,7 @@ public class MyApp extends Application implements IApplication {
 
 	@Override
 	public boolean isRelease() {
-		return true;
+		return BuildConfig.isRelease;
 	}
 
 	@Override

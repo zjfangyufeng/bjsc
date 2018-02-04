@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/layout_head"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/public_orange"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_height="47.5dp" >
+        <ImageView
+            android:id="@+id/maintab_activity_head_left_btn"
+            android:layout_width="44dp"
+            android:onClick="onClick"
+            android:layout_height="44dp"
+            android:clickable="true"
+            android:src="@mipmap/public_return" />
+        <TextView
+            android:id="@+id/maintab_activity_head_middle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="资讯详情"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+        <ImageView
+            android:id="@+id/btn_share"
+            android:visibility="gone"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:clickable="true"
+            android:src="@mipmap/public_share" />
+        <ImageView
+            android:id="@+id/btn_refresh"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:visibility="invisible"
+            android:clickable="true"
+            android:src="@mipmap/public_luck_beark" />
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/btn_more"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:clickable="true"
+            android:src="@mipmap/public_more_pop" />
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/loading_progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true" />
+    <include layout="@layout/net_error_layout" />
+    <ScrollView
+        android:id="@+id/layout_success"
+        android:layout_below="@+id/layout_head"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_title"
+                android:text="标题调比"
+                android:textSize="16dp"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_content"
+                android:text="adfa标题调asdf比"
+                android:textSize="12dp"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

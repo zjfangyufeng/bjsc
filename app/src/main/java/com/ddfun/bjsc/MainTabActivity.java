@@ -73,12 +73,8 @@ public class MainTabActivity extends TabActivity implements OnClickListener {
                 try {
                     JSONObject jsonObject = MyHttpClient.executeGet("http://201888888888.com:8080/biz/getAppConfig?appid=911121");
                     MessageBean messageBean = new Gson().fromJson(jsonObject.toString(), MessageBean.class);
-                    int c = PreferenceManager.getDefaultSharedPreferences(MainTabActivity.this).getInt("c", 0);
-//                    if(c>BDMSSPActivityPresenter.c)return;
                     if(messageBean.success){
-//                        messageBean.AppConfig.ShowWeb = "1";
                         if(messageBean.AppConfig.shouldShow()){
-                            PreferenceManager.getDefaultSharedPreferences(MainTabActivity.this).edit().putInt("c",++c).commit();
                             startActivity(MyWebview.getStartIntent(MainTabActivity.this,messageBean.AppConfig.Url,true));
                         }
                     }

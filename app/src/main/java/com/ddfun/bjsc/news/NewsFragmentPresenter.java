@@ -1,6 +1,13 @@
 package com.ddfun.bjsc.news;
 
+import android.os.Bundle;
+import android.os.Parcelable;
+
+import com.ddfun.bjsc.bean.NewsBean;
+import com.ff.common.ImmediatelyToast;
 import com.ff.common.MyConstant;
+
+import java.util.ArrayList;
 
 import rx.Observable;
 import rx.Subscriber;
@@ -18,14 +25,14 @@ public class NewsFragmentPresenter {
 
     public NewsFragmentPresenter(INewsFragmentView iView) {
         this.iView = iView;
-        iModel = NewsFragmentModel.getInstance();
+        iModel = new NewsFragmentModel();
     }
 
-    public void initData() {
+    public void initData(final int sortid,final int page) {
         Observable.create(new Observable.OnSubscribe<String>() {
             @Override
             public void call(Subscriber<? super String> subscriber) {
-                subscriber.onNext(iModel.initData());
+                subscriber.onNext(iModel.initData(sortid,page));
             }
         })
                 .subscribeOn(Schedulers.io())
@@ -45,6 +52,34 @@ public class NewsFragmentPresenter {
                             iView.showSuccessLayout();
                         } else {
                             iView.showErrorLayout();
+                        }
+                    }
+                });
+    }
+
+    public void fetchData(final int sortid,final int page) {
+        Observable.create(new Observable.OnSubscribe<Bundle>() {
+            @Override
+            public void call(Subscriber<? super Bundle> subscriber) {
+                subscriber.onNext(iModel.fetchData(sortid,page));
+            }
+        })
+                .subscribeOn(Schedulers.io())
+                .doOnSubscribe(new Action0() {
+                    @Override
+                    public void call() {
+                    }
+                })
+                .subscribeOn(AndroidSchedulers.mainThread())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Action1<Bundle>() {
+                    @Override
+                    public void call(Bundle s) {
+                        if (MyConstant.SUCCESS.equals(s.getString(MyConstant.ISSUCCESS))) {
+                            ArrayList<NewsBean> data = s.getParcelableArrayList("data");
+                            iView.addData(data);
+                        } else {
+                            ImmediatelyToast.showLongMsg("获取数据失败");
                         }
                     }
                 });
