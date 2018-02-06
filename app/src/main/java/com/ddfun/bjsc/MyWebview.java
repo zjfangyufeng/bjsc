@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.ff.common.DisplayMetricsTool;
+import com.ff.common.ImmediatelyToast;
 import com.ff.common.ToolUtils;
 import com.ff.common.activity.BaseActivity;
 import com.ff.common.utils.WebViewUtil;
@@ -147,9 +148,18 @@ public class MyWebview extends BaseActivity implements OnClickListener {
         return getIntent().getExtras().getString("url");
     }
 
+    private long waitTime = 2000;
+    private long touchTime = 0;
+
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if ((keyCode == KeyEvent.KEYCODE_BACK) && mWebView.canGoBack()) {
             mWebView.goBack();
+            return true;
+        }
+        long currentTime = System.currentTimeMillis();
+        if ((currentTime - touchTime) >= waitTime) {
+            ImmediatelyToast.showShortMsg("再按一次退出");
+            touchTime = currentTime;
             return true;
         }
         return super.onKeyDown(keyCode, event);

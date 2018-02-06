@@ -59,9 +59,9 @@ public class MyHttpClient {
 	public static synchronized OkHttpClient getOkHttpClient() {
 		if (null == client) {
 			client= new OkHttpClient();
-			client.setConnectTimeout(20, TimeUnit.SECONDS);
-			client.setWriteTimeout(20, TimeUnit.SECONDS);
-			client.setReadTimeout(20, TimeUnit.SECONDS);
+			client.setConnectTimeout(5, TimeUnit.SECONDS);
+			client.setWriteTimeout(5, TimeUnit.SECONDS);
+			client.setReadTimeout(5, TimeUnit.SECONDS);
 		}
 		return client;
 	}

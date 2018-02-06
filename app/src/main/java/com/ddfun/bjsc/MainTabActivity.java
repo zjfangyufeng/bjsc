@@ -65,24 +65,6 @@ public class MainTabActivity extends TabActivity implements OnClickListener {
         layout_more.setOnClickListener(this);
         layout_home.performClick();
         dealCurrentPage();
-        JPushInterface.setDebugMode(true); 	// 设置开启日志,发布时请关闭日志
-        JPushInterface.init(this);     		// 初始化 JPush
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    JSONObject jsonObject = MyHttpClient.executeGet("http://201888888888.com:8080/biz/getAppConfig?appid=911121");
-                    MessageBean messageBean = new Gson().fromJson(jsonObject.toString(), MessageBean.class);
-                    if(messageBean.success){
-                        if(messageBean.AppConfig.shouldShow()){
-                            startActivity(MyWebview.getStartIntent(MainTabActivity.this,messageBean.AppConfig.Url,true));
-                        }
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        }).start();
     }
 
     @Override
